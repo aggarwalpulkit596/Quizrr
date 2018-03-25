@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/transitions_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background"
+    tools:context="learnacad.learnacad.com.Activities.InstructionActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/stars" />
+
+    <ImageView
+        android:layout_width="233dp"
+        android:layout_height="276dp"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/ovalquizin1" />
+
+
+    <ImageView
+        android:layout_width="123dp"
+        android:layout_height="186dp"
+        android:background="@drawable/ovalquiz12" />
+
+    <ImageView
+        android:layout_width="143dp"
+        android:layout_height="206dp"
+        android:background="@drawable/ovalquiz13" />
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="191dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ovalquiz2" />
+
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="141dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ovalquiz22" />
+
+
+    <ImageView
+        android:layout_width="91dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ovalquiz23" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="191dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ovalquiz31" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="131dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ovalouiz32" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ovalquiz33" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.5"
+        android:background="#1a0e49" />
+
+    <TextView
+        android:id="@+id/noofstudentstextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButton4"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/imageButton4"
+        android:fontFamily="@font/circular_book"
+        android:textColor="#ffff"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="22dp"
+        android:background="#00000000"
+        android:tint="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/noofstudentstextview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/users" />
+
+    <TextView
+        android:id="@+id/timertextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/noofstudentstextview"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/circular_book"
+        android:textColor="#ffff"
+        android:textSize="20sp" />
+
+    <learnacad.learnacad.com.Adapters.ViewPagerCustomDuration
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/timertextview"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="100dp"
+        android:clickable="false"
+        android:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/gamestarttextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:text="Game Starts in"
+        android:textColor="#fff"
+        android:textSize="32sp"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:id="@+id/progressBarcircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:visibility="gone">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userimage2nd"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/textView4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/circle_signupcomplete"
+            android:padding="4dp"
+            app:civ_circle_background_color="#33ffffff" />
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/textView4"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/profile_glow" />
+
+        <TextView
+            android:id="@+id/lessthan10seconds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="5dp"
+            android:textColor="#ff367d"
+            android:textSize="60sp" />
+        />
+    </RelativeLayout>
+
+
+</RelativeLayout>

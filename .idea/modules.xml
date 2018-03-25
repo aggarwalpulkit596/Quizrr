@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MathongoNew.iml" filepath="$PROJECT_DIR$/MathongoNew.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72.iml" filepath="$PROJECT_DIR$/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/katexmathview/katexmathview.iml" filepath="$PROJECT_DIR$/katexmathview/katexmathview.iml" />
+    </modules>
+  </component>
+</project>

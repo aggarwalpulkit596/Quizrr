@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/card_backgorund"
+    android:backgroundTint="@android:color/white"
+    android:orientation="vertical"
+    android:textAlignment="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/circular_medium"
+        android:text="You’re in Viewer Mode"
+        android:textAlignment="center"
+        android:textColor="#0f0520"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/circular_book"
+        android:lineSpacingExtra="1.2dp"
+        android:text="You can only view the game as you’re eliminated."
+        android:textAlignment="center"
+        android:textColor="#BF0F0520"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/circular_book"
+        android:lineSpacingExtra="1.2dp"
+        android:text="Share your referral code with friends to get free lifelines."
+        android:textAlignment="center"
+        android:textColor="#BF0F0520"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/circular_book"
+        android:lineSpacingExtra="1.2dp"
+        android:text="Continue watching till the end to get review of today’s quiz."
+        android:textAlignment="center"
+        android:textColor="#BF0F0520"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_ripple_blue"
+        android:fontFamily="@font/circular_medium"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp"
+        android:text="Continue Watching"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_ripple_red"
+        android:fontFamily="@font/circular_medium"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp"
+        android:text="Share with Friends"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

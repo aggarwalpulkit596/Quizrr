@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splashlinearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/splashimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/custom_background"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:alpha="0.6"
+            android:background="@drawable/stars" />
+
+
+        <ImageView
+            android:layout_width="233dp"
+            android:layout_height="276dp"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/ovalquizin1" />
+
+
+        <ImageView
+            android:layout_width="123dp"
+            android:layout_height="186dp"
+            android:background="@drawable/ovalquiz12" />
+
+        <ImageView
+            android:layout_width="143dp"
+            android:layout_height="206dp"
+            android:background="@drawable/ovalquiz13" />
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="191dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ovalquiz2" />
+
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="141dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ovalquiz22" />
+
+
+        <ImageView
+            android:layout_width="91dp"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ovalquiz23" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="191dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ovalquiz31" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="131dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ovalouiz32" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ovalquiz33" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="74dp"
+            android:layout_marginStart="74dp"
+            android:fontFamily="@font/circularbold"
+            android:src="@drawable/logo_splash" />
+    </RelativeLayout>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/transitions_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1a0e49"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/stars" />
+
+
+        <ImageView
+            android:layout_width="233dp"
+            android:layout_height="276dp"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/ovalquizin1" />
+
+
+        <ImageView
+            android:layout_width="123dp"
+            android:layout_height="186dp"
+            android:background="@drawable/ovalquiz12" />
+
+        <ImageView
+            android:layout_width="143dp"
+            android:layout_height="206dp"
+            android:background="@drawable/ovalquiz13" />
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="191dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ovalquiz2" />
+
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="110dp"
+            android:layout_height="141dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ovalquiz22" />
+
+
+        <ImageView
+            android:layout_width="91dp"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ovalquiz23" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="191dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ovalquiz31" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="131dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ovalouiz32" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ovalquiz33" />
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/glow"-->
+        <!--android:layout_width="290dp"-->
+        <!--android:layout_height="75dp"-->
+        <!--android:layout_below="@+id/splashDescription"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:background="@drawable/glow" />-->
+
+        <ImageView
+            android:id="@+id/text_quizr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView8"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="74dp"
+            android:layout_marginStart="74dp"
+            android:adjustViewBounds="true"
+            android:fontFamily="@font/circularbold"
+            android:gravity="center"
+            android:src="@drawable/logo_splash" />
+
+        <TextView
+            android:id="@+id/splashDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_quizr"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/circular_book"
+            android:lineSpacingMultiplier="1.2"
+            android:maxLines="2"
+            android:text="where learning is fun"
+            android:textAlignment="center"
+            android:textColor="#BFFFFFFF"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+
+        <Button
+            android:id="@+id/splashgetstarted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/splashDescription"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="72dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button_ripple_red"
+            android:fontFamily="@font/circular_medium"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp"
+            android:text="Get Started"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+        <!--android:shadowColor="#fff"-->
+
+        <!--android:shadowDx="10dp"-->
+        <!--android:shadowDy="20dp"-->
+        <!--android:shadowRadius="4dp"-->
+        <!--android:textAllCaps="false"-->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/splashtextviews"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:alpha="0.5"
+            android:fontFamily="@font/circular_book"
+            android:text="By signing up you agree to our"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/splashtextviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/circular_book"
+            android:textColor="#fff">
+
+            <TextView
+                android:id="@+id/splashtermstextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/circular_book"
+                android:text="Terms of Use,"
+                android:textColor="#80FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/splashpolicytextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/circular_book"
+                android:text=" Privacy Policy"
+                android:textColor="#80FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/splashrulestextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/circular_book"
+                android:text=" and Rules"
+                android:textColor="#80FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="learnacad.learnacad.com.InfoActivies.LosersActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/custom_background"
+        tools:context="learnacad.learnacad.com.InfoActivies.LosersActivity">
+
+        <TextView
+            android:id="@+id/losertitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="43dp"
+            android:fontFamily="@font/circular_medium"
+            android:text="Top 3 Winners"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/firstimage"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_below="@id/losertitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/circle_edit2"
+            android:padding="2dp"
+            android:src="@drawable/default_avatar" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/firstimage"
+            android:layout_alignTop="@+id/firstimage"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:src="@drawable/top_3_first_circle" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/secondimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignBottom="@id/firstimage"
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@id/firstimage"
+            android:background="@drawable/circle_edit2"
+            android:padding="2dp"
+            android:src="@drawable/default_avatar" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignEnd="@+id/secondimage"
+            android:layout_alignTop="@+id/secondimage"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:src="@drawable/top_3_second_circle" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/thirdimage"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignBottom="@id/firstimage"
+            android:layout_marginStart="20dp"
+            android:layout_toRightOf="@id/firstimage"
+            android:background="@drawable/circle_edit2"
+            android:padding="2dp"
+            android:src="@drawable/default_avatar" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignEnd="@+id/thirdimage"
+            android:layout_alignTop="@+id/thirdimage"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:src="@drawable/top_3_third_circle" />
+
+        <TextView
+            android:id="@+id/secondtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/secondimage"
+            android:layout_alignStart="@id/secondimage"
+            android:layout_below="@id/secondimage"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/circular_book"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/firstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/firstimage"
+            android:layout_alignStart="@id/firstimage"
+            android:layout_below="@id/firstimage"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/circular_book"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/thirdtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/thirdimage"
+            android:layout_alignStart="@id/thirdimage"
+            android:layout_below="@id/thirdimage"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/circular_book"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/infotext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/thirdimage"
+            android:layout_alignStart="@id/secondimage"
+            android:layout_below="@id/firstext"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="10sp"
+            android:text="You can be there too.\nPractice. Play. Win."
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/winleaderboard"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/winreviewquiz"
+            android:background="@drawable/button_ripple_blue"
+            android:fontFamily="@font/circular_medium"
+            android:onClick="openleaderboard"
+            android:layout_marginEnd="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="20dp"
+            android:shadowColor="#4c3988ff"
+            android:text="View Leaderboard"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/winreviewquiz"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/infotext"
+            android:layout_marginEnd="60dp"
+            android:layout_marginStart="60dp"
+            android:background="@drawable/button_ripple_red"
+            android:fontFamily="@font/circular_medium"
+            android:onClick="reviewquiz"
+            android:text="Review Quiz"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/winleaderboard"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/circular_book"
+            android:onClick="takehome"
+            android:text="Take Me Home"
+            android:textColor="#aab7d9"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+</ScrollView>

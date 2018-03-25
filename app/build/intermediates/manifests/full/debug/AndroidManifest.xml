@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="learnacad.learnacad.com"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name="learnacad.learnacad.com.QuizApp"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/app_icon_circle"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/app_icon_circle"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme1" >
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="learnacad.learnacad.com.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name="learnacad.learnacad.com.Activities.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="learnacad.learnacad.com.InfoActivies.TermsandPolicyActivity"
+            android:parentActivityName="learnacad.learnacad.com.Activities.SplashActivity" />
+        <activity
+            android:name="learnacad.learnacad.com.SignUpActivites.SignUpActivity"
+            android:parentActivityName="learnacad.learnacad.com.Activities.SplashActivity" />
+        <activity
+            android:name="learnacad.learnacad.com.SignUpActivites.OtpActivity"
+            android:parentActivityName="learnacad.learnacad.com.SignUpActivites.SignUpActivity" />
+        <activity
+            android:name="learnacad.learnacad.com.SignUpActivites.ProfileActivity"
+            android:parentActivityName="learnacad.learnacad.com.Activities.SplashActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name="learnacad.learnacad.com.SignUpActivites.SigUpComplete" />
+        <activity android:name="learnacad.learnacad.com.Activities.HomeActivity" />
+        <activity android:name="learnacad.learnacad.com.Activities.InstructionActivity" />
+        <activity android:name="learnacad.learnacad.com.InfoActivies.WinningActivity" />
+        <activity
+            android:name="learnacad.learnacad.com.Activities.LeaderBoardActivity"
+            android:parentActivityName="learnacad.learnacad.com.Activities.HomeActivity" />
+        <activity android:name="learnacad.learnacad.com.Activities.QuizReviewActivity" />
+        <activity
+            android:name="learnacad.learnacad.com.Activities.ShareActivity"
+            android:parentActivityName="learnacad.learnacad.com.Activities.HomeActivity" />
+        <activity
+            android:name="learnacad.learnacad.com.InfoActivies.AboutActivity"
+            android:parentActivityName="learnacad.learnacad.com.Activities.HomeActivity" />
+
+        <receiver
+            android:name="learnacad.learnacad.com.Adapters.AlarmReceiver"
+            android:enabled="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="learnacad.learnacad.com.Adapters.MyReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="learnacad.learnacad.com.InfoActivies.Winners" >
+        </activity>
+        <activity android:name="learnacad.learnacad.com.InfoActivies.LosersActivity" />
+        <activity android:name="learnacad.learnacad.com.Game2Activity" />
+        <activity android:name="learnacad.learnacad.com.Activities.PastQuizesActivity" />
+
+        <receiver
+            android:name="learnacad.learnacad.com.Adapters.ConnectivityReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="learnacad.learnacad.com.com.squareup.picasso"
+            android:exported="false" />
+    </application>
+
+</manifest>

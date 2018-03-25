@@ -1,0 +1,77 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rBR/values-pt-rBR.xml",
+            "map": [
+                {
+                    "source": "/Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.6.1.aar/f1b5402d2daad9680b07e0a1bd7b9225/res/values-pt-rBR/values-pt-rBR.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,130,204,272,343,422,501,579,656,729,818",
+                        "endColumns": "74,73,67,70,78,78,77,76,72,88,65",
+                        "endOffsets": "125,199,267,338,417,496,574,651,724,813,879"
+                    },
+                    "to": {
+                        "startLines": "26,27,28,29,30,31,32,33,34,35,36",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2388,2463,2537,2605,2676,2755,2834,2912,2989,3062,3151",
+                        "endColumns": "74,73,67,70,78,78,77,76,72,88,65",
+                        "endOffsets": "2458,2532,2600,2671,2750,2829,2907,2984,3057,3146,3212"
+                    }
+                },
+                {
+                    "source": "/Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/b88f2c76d48537eb5654cfe79f9783b5/res/values-pt-rBR/values-pt-rBR.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,225,331,438,527,628,746,829,909,996,1103,1215,1317,1425,1532,1642,1804,1904",
+                        "endColumns": "119,105,106,88,100,117,82,79,86,106,111,101,107,106,109,161,99,84",
+                        "endOffsets": "220,326,433,522,623,741,824,904,991,1098,1210,1312,1420,1527,1637,1799,1899,1984"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,38",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,225,331,438,527,628,746,829,909,996,1103,1215,1317,1425,1532,1642,1804,3303",
+                        "endColumns": "119,105,106,88,100,117,82,79,86,106,111,101,107,106,109,161,99,84",
+                        "endOffsets": "220,326,433,522,623,741,824,904,991,1098,1210,1312,1420,1527,1637,1799,1899,3383"
+                    }
+                },
+                {
+                    "source": "/Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.5.1.aar/109149d26e0b279f2ff44e436f265eb3/res/values-pt-rBR/values-pt-rBR.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,102,158,216,301,383,461,539",
+                        "endColumns": "46,55,57,84,81,77,77,85",
+                        "endOffsets": "97,153,211,296,378,456,534,620"
+                    },
+                    "to": {
+                        "startLines": "19,20,21,22,23,24,25,37",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "1904,1951,2007,2065,2150,2232,2310,3217",
+                        "endColumns": "46,55,57,84,81,77,77,85",
+                        "endOffsets": "1946,2002,2060,2145,2227,2305,2383,3298"
+                    }
+                },
+                {
+                    "source": "/Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/b27bb2c470d9c17942fd5c409251ebdd/res/values-pt-rBR/values-pt-rBR.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "39",
+                        "startColumns": "4",
+                        "startOffsets": "3388",
+                        "endColumns": "100",
+                        "endOffsets": "3484"
+                    }
+                }
+            ]
+        }
+    ]
+}

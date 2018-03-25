@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="defaultletter">
+        <item>@drawable/a_default</item>
+        <item>@drawable/b_default</item>
+        <item>@drawable/c_default</item>
+        <item>@drawable/d_default</item>
+    </integer-array>
+    <integer-array name="selectedletter">
+        <item>@drawable/a_marked</item>
+        <item>@drawable/b_marked</item>
+        <item>@drawable/c_marked</item>
+        <item>@drawable/d_marked</item>
+    </integer-array>
+    <integer-array name="incorrectletter">
+        <item>@drawable/a_incorrect</item>
+        <item>@drawable/b_incorrect</item>
+        <item>@drawable/c_incorrect</item>
+        <item>@drawable/d_incorrect</item>
+    </integer-array>
+    <integer-array name="correctletter">
+        <item>@drawable/a_correct</item>
+        <item>@drawable/b_correct</item>
+        <item>@drawable/c_correct</item>
+        <item>@drawable/d_correct</item>
+    </integer-array>
+</resources>

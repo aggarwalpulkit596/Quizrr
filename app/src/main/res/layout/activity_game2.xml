@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/transitions_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2e005b"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/questionactivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2e005b"
+        android:visibility="visible">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            tools:context="learnacad.learnacad.com.Game2Activity">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/questionplayersimageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="26dp"
+                        android:tint="@android:color/white"
+                        app:srcCompat="@drawable/users" />
+
+                    <TextView
+                        android:id="@+id/questionnoofplayerstextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/questionnumbertextview"
+                        android:layout_alignStart="@+id/questionnumbertextview"
+                        android:layout_marginStart="9dp"
+
+                        android:foregroundGravity="center"
+                        android:text="0 Players"
+                        android:textColor="#ffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/questiontimespenttextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/questionprogressbar"
+                        android:layout_toStartOf="@+id/questiontimespentvalue"
+                        android:text="Time Spent : "
+                        android:textColor="#ffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/questiontimespentvalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/questiontimespenttextview"
+                        android:layout_alignBottom="@+id/questiontimespenttextview"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="24dp"
+                        android:text="00 sec"
+                        android:textColor="#ffff"
+                        android:textSize="16sp" />
+
+                    <ProgressBar
+                        android:id="@+id/questionprogressbar"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="6dp"
+                        android:layout_alignEnd="@+id/questiontimespentvalue"
+                        android:layout_alignStart="@id/questionplayersimageview"
+                        android:layout_below="@+id/questionplayersimageview"
+                        android:layout_marginTop="20dp"
+                        android:indeterminate="false"
+                        android:max="3000"
+                        android:progress="3000"
+                        android:progressDrawable="@drawable/progressbar_states"
+                        android:scaleY="1.2" />
+
+
+                    <TextView
+                        android:id="@+id/questionnumbertextview"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignStart="@+id/questionplayersimageview"
+                        android:layout_below="@+id/questionplayersimageview"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="46dp"
+                        android:background="@drawable/circle_questionnumber"
+                        android:elevation="10dp"
+                        android:fontFamily="@font/circular_medium"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <com.github.captain_miao.optroundcardview.OptRoundCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/questioncardview1"
+                        style="@style/OptRoundCardView.Dark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/questiontimespentvalue"
+                        android:layout_alignStart="@id/questionplayersimageview"
+                        android:layout_alignTop="@+id/questionnumbertextview"
+                        android:layout_marginTop="20dp"
+                        android:elevation="0dp"
+                        card_view:cardBackgroundColor="#6216ac"
+                        card_view:cardPreventCornerOverlap="true"
+                        card_view:optRoundCardCornerRadius="5dp"
+                        card_view:optRoundCardLeftBottomCorner="false"
+                        card_view:optRoundCardRightBottomCorner="false">
+
+                        <katex.hourglass.in.mathlib.MathView
+                            android:id="@+id/questionwebview1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingBottom="35dp"
+                            app:fontFamily="@font/circular_medium"
+                            app:setClickable="false"
+                            app:setText="Loading..."
+                            app:setTextColor="#fff"
+                            app:setTextSize="14sp" />
+                    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+                    <com.github.captain_miao.optroundcardview.OptRoundCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/questioncardView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/questiontimespentvalue"
+                        android:layout_alignStart="@+id/questioncardview1"
+                        android:layout_below="@+id/questioncardview1"
+                        card_view:optRoundCardBottomEdges="false"
+                        card_view:optRoundCardCornerRadius="0dp">
+
+                        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:tools="http://schemas.android.com/tools"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/optionimageA"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="20dp"
+                                android:src="@drawable/a_default" />
+
+                            <katex.hourglass.in.mathlib.MathView
+                                android:id="@+id/questionanswebview1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toEndOf="@+id/optionimageA"
+                                android:fontFamily="@font/circular_medium"
+                                android:padding="0dp"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                app:setText="Loading..."
+                                app:setTextColor="#2a2436"
+                                app:setTextSize="11sp" />
+                        </RelativeLayout>
+
+
+                    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignEnd="@+id/questiontimespentvalue"
+                        android:layout_alignStart="@+id/questioncardview1"
+                        android:layout_below="@id/questioncardView2"
+                        android:background="#33000000"
+                        android:elevation="4dp" />
+
+                    <com.github.captain_miao.optroundcardview.OptRoundCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/questioncardView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/questiontimespentvalue"
+                        android:layout_alignStart="@+id/questioncardView2"
+                        android:layout_below="@+id/questioncardView2"
+                        card_view:optRoundCardBottomEdges="true"
+                        card_view:optRoundCardCornerRadius="0dp"
+                        card_view:optRoundCardTopEdges="true">
+
+                        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:tools="http://schemas.android.com/tools"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/optionimageB"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="20dp"
+                                android:src="@drawable/b_default" />
+
+                            <katex.hourglass.in.mathlib.MathView
+                                android:id="@+id/questionanswebview2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toEndOf="@+id/optionimageB"
+                                android:fontFamily="@font/circular_medium"
+                                android:padding="0dp"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                app:setText="Loading..."
+                                app:setTextColor="#2a2436"
+                                app:setTextSize="11sp" />
+                        </RelativeLayout>
+
+                    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignEnd="@+id/questiontimespentvalue"
+                        android:layout_alignStart="@+id/questioncardview1"
+                        android:layout_below="@id/questioncardView3"
+                        android:background="#33000000"
+                        android:elevation="4dp" />
+
+                    <com.github.captain_miao.optroundcardview.OptRoundCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/questioncardView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/questiontimespentvalue"
+                        android:layout_alignStart="@+id/questioncardView3"
+                        android:layout_below="@+id/questioncardView3"
+                        android:textColor="@android:color/white"
+                        card_view:optRoundCardBottomEdges="true"
+                        card_view:optRoundCardCornerRadius="0dp">
+
+                        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:tools="http://schemas.android.com/tools"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/optionimageC"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="20dp"
+                                android:src="@drawable/c_default" />
+
+                            <katex.hourglass.in.mathlib.MathView
+                                android:id="@+id/questionanswebview3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toEndOf="@+id/optionimageC"
+                                android:fontFamily="@font/circular_medium"
+                                android:padding="0dp"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                app:setText="Loading..."
+                                app:setTextColor="#2a2436"
+                                app:setTextSize="11sp" />
+                        </RelativeLayout>
+
+                    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignEnd="@+id/questiontimespentvalue"
+                        android:layout_alignStart="@+id/questioncardview1"
+                        android:layout_below="@id/questioncardView4"
+                        android:background="#33000000"
+                        android:elevation="4dp" />
+
+                    <com.github.captain_miao.optroundcardview.OptRoundCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/questioncardView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/tasklayout"
+                        android:layout_alignEnd="@+id/questiontimespentvalue"
+                        android:layout_alignStart="@+id/questioncardView4"
+                        android:layout_below="@+id/questioncardView4"
+                        android:layout_marginBottom="50dp"
+                        android:textColor="@android:color/white"
+                        card_view:optRoundCardCornerRadius="5dp"
+                        card_view:optRoundCardLeftTopCorner="false"
+                        card_view:optRoundCardRightTopCorner="false">
+
+
+                        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:tools="http://schemas.android.com/tools"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/optionimageD"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="20dp"
+                                android:src="@drawable/d_default" />
+
+                            <katex.hourglass.in.mathlib.MathView
+                                android:id="@+id/questionanswebview4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toEndOf="@+id/optionimageD"
+                                android:fontFamily="@font/circular_medium"
+                                android:padding="0dp"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                app:setText="Loading..."
+                                app:setTextColor="#2a2436"
+                                app:setTextSize="11sp" />
+                        </RelativeLayout>
+                    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+                </RelativeLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/questionmode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#d63f3a"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/circular_book"
+                android:padding="10dp"
+                android:text="You are in viewer mode."
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/gameinfobtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_info_outline_white_24px" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gifactivtity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/giflayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="96dp"
+            android:background="#fff">
+
+            <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+                android:id="@+id/gifimage"
+                app:use_controller="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5dp" />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/gifttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/giflayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/circular_book"
+            android:lineSpacingMultiplier="1.5"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="28sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/responseactivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2e005b"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/responsenextquestiontimertextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/responseimageview"
+            android:layout_toRightOf="@id/responsenoofplayerstextview"
+            android:layout_toStartOf="@+id/responsenextquestiontimer"
+            android:fontFamily="@font/circular_medium"
+            android:text="Next Ques : "
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/responsenextquestiontimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/responsenextquestiontimertextview"
+            android:layout_alignBottom="@+id/responsenextquestiontimertextview"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="27dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/responsenoofplayerimageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="17dp"
+            android:tint="@android:color/white"
+            app:srcCompat="@drawable/users" />
+
+        <TextView
+            android:id="@+id/responsenoofplayerstextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/responsenoofplayerimageview"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/responsenoofplayerimageview"
+            android:fontFamily="@font/circular_medium"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/responseimageview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/responsenoofplayerstextview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:padding="25dp"
+            android:textSize="20sp"
+            android:tint="@android:color/white" />
+
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/responsecardview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/responsenextquestiontimer"
+            android:layout_alignStart="@id/responsenoofplayerimageview"
+            android:layout_alignTop="@+id/responseimageview"
+            android:layout_marginTop="50dp"
+            android:elevation="0dp"
+            android:padding="40dp"
+            card_view:cardBackgroundColor="#33000000"
+            card_view:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/responsecardview">
+
+                <TextView
+                    android:id="@+id/responsetitletextview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="75dp"
+                    android:fontFamily="@font/circular_medium"
+                    android:textAlignment="center"
+                    android:textColor="#2a2436"
+                    android:textSize="22sp" />
+                <ImageView
+                    android:id="@+id/responseheartimage"
+                    android:adjustViewBounds="true"
+                    android:layout_alignTop="@id/responsemesaagetextview"
+                    android:src="@drawable/heart_game_screen"
+                    android:layout_width="18dp"
+                    android:visibility="gone"
+                    android:layout_height="18dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignBottom="@id/responsemesaagetextview"
+                    android:layout_toLeftOf="@id/responsemesaagetextview"/>
+
+                <TextView
+                    android:id="@+id/responsemesaagetextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/responsetitletextview"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/circular_medium"
+                    android:textAlignment="center"
+                    android:textColor="#2a2436"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <View
+                    android:id="@+id/reponseviewline1"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_below="@id/responsemesaagetextview"
+                    android:layout_marginTop="20dp"
+                    android:background="#fff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/reponseviewline1"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="0dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#e9e0f2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/circular_medium"
+                            android:text="Your Answer Time"
+                            android:textAlignment="center"
+                            android:textColor="#2a2436"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/responseyouranswertime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/circular_medium"
+                            android:paddingBottom="10dp"
+                            android:text="-"
+                            android:textAlignment="center"
+                            android:textColor="#2a2436"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".02"
+                        android:background="#fff" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#e9e0f2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/circular_medium"
+                            android:text="Quickest Answer"
+                            android:textAlignment="center"
+                            android:textColor="#2a2436"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/responsequickestanswer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/circular_medium"
+                            android:paddingBottom="10dp"
+                            android:text="-"
+                            android:textAlignment="center"
+                            android:textColor="#2a2436"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <com.github.captain_miao.optroundcardview.OptRoundCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/responsecardview2"
+            style="@style/OptRoundCardView.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/responsenextquestiontimer"
+            android:layout_alignStart="@+id/responsecardview1"
+            android:layout_below="@+id/responsecardview1"
+            android:layout_marginTop="20dp"
+            card_view:cardBackgroundColor="#fff"
+            card_view:optRoundCardCornerRadius="5dp"
+            card_view:optRoundCardLeftBottomCorner="false"
+            card_view:optRoundCardRightBottomCorner="false">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/responseansbackground1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/responseimageA"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/a_default" />
+
+                <TextView
+                    android:id="@+id/responseanswebview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:layout_toEndOf="@+id/responseimageA"
+                    android:fontFamily="@font/circular_medium"
+                    android:padding="0dp"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ProgressBar
+                    android:id="@+id/responseansprogress1"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:layout_below="@id/responseanswebview1"
+                    android:layout_marginTop="19dp"
+                    android:indeterminate="false"
+                    android:padding="0dp"
+                    android:progressDrawable="@drawable/progressbar_response_states"
+                    android:scaleY="1.2" />
+            </RelativeLayout>
+
+
+        </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+
+        <com.github.captain_miao.optroundcardview.OptRoundCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/responsecardview3"
+            style="@style/OptRoundCardView.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/responsenextquestiontimer"
+            android:layout_alignStart="@+id/responsecardview2"
+            android:layout_below="@+id/responsecardview2"
+            card_view:cardBackgroundColor="#33000000"
+
+            card_view:optRoundCardCornerRadius="0dp"
+            card_view:optRoundCardLeftBottomCorner="false"
+            card_view:optRoundCardRightBottomCorner="false"
+            card_view:optRoundCardRightEdges="false">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/responseansbackground2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/responseimageB"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/b_default" />
+
+                <TextView
+                    android:id="@+id/responseanswebview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:layout_toEndOf="@+id/responseimageB"
+                    android:fontFamily="@font/circular_medium"
+                    android:padding="0dp"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ProgressBar
+                    android:id="@+id/responseansprogress2"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:layout_below="@id/responseanswebview2"
+                    android:layout_marginTop="19dp"
+                    android:indeterminate="false"
+                    android:padding="0dp"
+                    android:progressDrawable="@drawable/progressbar_response_states"
+                    android:scaleY="1.2" />
+            </RelativeLayout>
+
+
+        </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+        <com.github.captain_miao.optroundcardview.OptRoundCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/responsecardview4"
+            style="@style/OptRoundCardView.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/responsenextquestiontimer"
+            android:layout_alignStart="@+id/responsecardview3"
+            android:layout_below="@+id/responsecardview3"
+            card_view:optRoundCardCornerRadius="0dp"
+            card_view:optRoundCardLeftBottomCorner="false"
+            card_view:optRoundCardRightBottomCorner="false"
+            card_view:optRoundCardRightEdges="false">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/responseansbackground3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/responseimageC"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/c_default" />
+
+                <TextView
+                    android:id="@+id/responseanswebview3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:layout_toEndOf="@+id/responseimageC"
+                    android:fontFamily="@font/circular_medium"
+                    android:padding="0dp"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ProgressBar
+                    android:id="@+id/responseansprogress3"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:layout_below="@id/responseanswebview3"
+                    android:layout_marginTop="19dp"
+                    android:indeterminate="false"
+                    android:padding="0dp"
+                    android:progressDrawable="@drawable/progressbar_response_states"
+                    android:scaleY="1.2" />
+            </RelativeLayout>
+
+
+        </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+        <com.github.captain_miao.optroundcardview.OptRoundCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/responsecardview5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/responsenextquestiontimer"
+            android:layout_alignStart="@+id/responsecardview4"
+            android:layout_below="@+id/responsecardview4"
+            android:elevation="4dp"
+            card_view:optRoundCardCornerRadius="5dp"
+            card_view:optRoundCardLeftTopCorner="false"
+            card_view:optRoundCardRightTopCorner="false">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/responseansbackground4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/responseimageD"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/d_default" />
+
+                <TextView
+                    android:id="@+id/responseanswebview4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:layout_toEndOf="@+id/responseimageD"
+                    android:fontFamily="@font/circular_medium"
+                    android:padding="0dp"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ProgressBar
+                    android:id="@+id/responseansprogress4"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/responseanswebview4"
+                    android:layout_marginTop="19dp"
+                    android:elevation="1dp"
+                    android:indeterminate="false"
+                    android:padding="0dp"
+                    android:progressDrawable="@drawable/progressbar_response_states"
+                    android:scaleY="1.2" />
+            </RelativeLayout>
+
+
+        </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/latelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/latenoofplayerstextview"
+            android:layout_alignTop="@+id/latenoofplayerstextview"
+
+            android:layout_marginEnd="7dp"
+            android:layout_toStartOf="@+id/latenextquestiontimer"
+            android:fontFamily="@font/circular_medium"
+            android:text="Wait for"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/latenextquestiontimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/latenoofplayerstextview"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/latenoofplayerstextview"
+            android:layout_marginEnd="23dp"
+            android:text="25 sec"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/latenoofplayerimageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="17dp"
+            android:tint="@android:color/white"
+            app:srcCompat="@drawable/users" />
+
+        <TextView
+            android:id="@+id/latenoofplayerstextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/latenoofplayerimageview"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/latenoofplayerimageview"
+            android:fontFamily="@font/circular_medium"
+            android:text="700"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_below="@+id/latenoofplayerimageview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp"
+            app:srcCompat="@drawable/clock_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/circular_medium"
+            android:text="You're late."
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+</LinearLayout>
+

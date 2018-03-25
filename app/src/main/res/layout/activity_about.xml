@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background"
+    tools:context="learnacad.learnacad.com.InfoActivies.AboutActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/stars" />
+
+    <ImageView
+        android:layout_width="233dp"
+        android:layout_height="276dp"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/ovalquizin1" />
+
+
+    <ImageView
+        android:layout_width="123dp"
+        android:layout_height="186dp"
+        android:background="@drawable/ovalquiz12" />
+
+    <ImageView
+        android:layout_width="143dp"
+        android:layout_height="206dp"
+        android:background="@drawable/ovalquiz13" />
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="191dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ovalquiz2" />
+
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="141dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ovalquiz22" />
+
+
+    <ImageView
+        android:layout_width="91dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ovalquiz23" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="191dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ovalquiz31" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="131dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ovalouiz32" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ovalquiz33" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.4"
+        android:background="#1a0e49" />
+
+    <ImageView
+        android:id="@+id/otpbackbtnimageview"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/ic_arrow_back_black_24dp"
+        android:onClick="backbtn" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/otpbackbtnimageview"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/circular_medium"
+        android:gravity="center_horizontal"
+        android:text="About"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/appversiontext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/splashtextviews"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/circular_book"
+        android:text="App Version 1.2"
+        android:textColor="#aab7d9"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/splashtextviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/circular_book"
+
+        android:textColor="#aab7d9"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/aboutusterms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/circular_book"
+            android:text="Terms of Use,"
+            android:textColor="#aab7d9"
+            android:visibility="gone"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/aboutuspolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/circular_book"
+            android:text=" Privacy Policy"
+            android:textColor="#aab7d9"
+            android:visibility="gone"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/splashrulestextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/circular_book"
+            android:text=" and Rules"
+            android:visibility="gone"
+            android:textColor="#aab7d9"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/rulesButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/otpbackbtnimageview"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/button_ripple_red"
+        android:src="@drawable/help_circle" />
+
+    <TextView
+        android:id="@+id/rulesButtontext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rulesButton"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/rulesButton"
+        android:fontFamily="@font/circular_book"
+        android:text="Rules"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/ratebutton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rulesButton"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_ripple_red"
+        android:src="@drawable/star" />
+
+    <TextView
+        android:id="@+id/ratebuttontext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ratebutton"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/ratebutton"
+        android:fontFamily="@font/circular_book"
+        android:text="Rate us on Playstore"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/logoutbutton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ratebutton"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_ripple_red"
+        android:src="@drawable/log_out" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/logoutbutton"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/logoutbutton"
+        android:fontFamily="@font/circular_book"
+        android:text="Log out"
+        android:id="@+id/logoutbuttontext"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/fbbutton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignTop="@id/twitterbutton"
+        android:layout_toLeftOf="@id/twitterbutton"
+        android:background="@drawable/button_skyblue"
+        android:src="@drawable/facebook_box" />
+
+    <ImageButton
+        android:id="@+id/instabutton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignTop="@id/twitterbutton"
+        android:layout_toRightOf="@id/twitterbutton"
+        android:background="@drawable/button_ripple_red"
+        android:src="@drawable/instagram" />
+
+    <ImageButton
+        android:id="@+id/twitterbutton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_above="@id/appversiontext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="85dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/button_ripple_blue"
+        android:src="@drawable/twitter" />
+
+
+</RelativeLayout>

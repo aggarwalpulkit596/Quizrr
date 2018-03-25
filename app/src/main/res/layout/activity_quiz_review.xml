@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2e005b"
+    tools:context="learnacad.learnacad.com.Activities.QuizReviewActivity">
+
+    <ImageView
+        android:id="@+id/otpbackbtnimageview"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/ic_arrow_back_black_24dp"
+        android:onClick="backbtn" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/otpbackbtnimageview"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/circular_medium"
+        android:gravity="center_horizontal"
+        android:text="Quiz Review"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/topictextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="Application of Derivatives" />
+
+    <LinearLayout
+        android:id="@+id/viewPagerCountDots"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/topictextview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="26dp"
+        android:orientation="horizontal" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tasklayout"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/viewPagerCountDots" />
+
+
+    <LinearLayout
+        android:id="@+id/tasklayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#0f002d"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/prevbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Prev"
+            android:fontFamily="@font/circular_book"
+            android:paddingStart="14dp"
+            android:textColor="#A9A9A9"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/nextbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="14dp"
+            android:text="Next"
+            android:fontFamily="@font/circular_book"
+
+            android:textAlignment="textEnd"
+            android:textColor="#ffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

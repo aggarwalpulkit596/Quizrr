@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background"
+    tools:context="learnacad.learnacad.com.InfoActivies.Winners">
+
+    <nl.dionsegijn.konfetti.KonfettiView
+        android:id="@+id/winnerconfetti"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="5dp" />
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context="learnacad.learnacad.com.InfoActivies.Winners">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/winnermessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="@font/circular_medium"
+                    android:textColor="#ffae00"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/winnerusername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/winnermessage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/circular_medium"
+                    android:textColor="#ffae00"
+                    android:textSize="30sp" />
+
+                <RelativeLayout
+                    android:id="@+id/userimageback"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:layout_below="@id/winnerusername"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/winner_shine">
+
+                    <ImageView
+                        android:id="@+id/winnerpostion"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignEnd="@id/winneruserimage"
+                        android:layout_alignTop="@id/winneruserimage"
+                        android:elevation="5dp"
+                        android:src="@drawable/winner_first_circle" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/winneruserimage"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_edit"
+                        android:padding="2dp"
+                        android:src="@drawable/default_avatar" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/winnerprizetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/userimageback"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/circular_medium"
+                    android:padding="0dp"
+                    android:textColor="#ffae00"
+                    android:text="Prize Earned"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/winnermoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/winnerprizetext"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="0dp"
+                    android:fontFamily="sans-serif"
+                    android:includeFontPadding="false"
+                    android:padding="0dp"
+                    android:textColor="#ffae00"
+                    android:textSize="48sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/winreviewquiz"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/winnermoney"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/button_ripple_red"
+                    android:fontFamily="@font/circular_medium"
+                    android:onClick="sharescreenshot"
+                    android:text="Show Your Achievement"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/winreviewquiz"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="44dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/circular_medium"
+                    android:onClick="winning"
+                    android:textSize="20sp"
+                    android:text="Continue"
+                    android:textColor="#7fffffff" />
+
+
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,343 @@
+-- Merging decision tree log ---
+provider#android.support.v4.content.FileProvider
+INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:23:9-31:20
+	android:grantUriPermissions
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:27:13-47
+	android:authorities
+		INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:25:13-60
+	android:exported
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:24:13-67
+manifest
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-99:12
+INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-99:12
+INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-99:12
+INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-99:12
+MERGED from [:katexmathview] /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/katexmathview/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-17:12
+MERGED from [com.android.support:design:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/4431855299efbf904536c5bb2bf3e994/AndroidManifest.xml:17:1-22:12
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.5.1] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.5.1.aar/109149d26e0b279f2ff44e436f265eb3/AndroidManifest.xml:2:1-12:12
+MERGED from [com.android.support:appcompat-v7:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/b88f2c76d48537eb5654cfe79f9783b5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/47b00ddf87e82fc3739b10f6b242ba16/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:cardview-v7:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.0.aar/ee7e4b2426a727df10c7decf3b7a02b2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/00be74d71a3b963525fd396279720a18/AndroidManifest.xml:2:1-7:12
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/bb8c1e0199644fe95a3e4ba8313d020f/AndroidManifest.xml:2:1-11:12
+MERGED from [id.zelory:compressor:2.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/compressor-2.1.0.aar/5c31cdc1020795323cf3943885535a6e/AndroidManifest.xml:2:1-12:12
+MERGED from [nl.dionsegijn:konfetti:1.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/konfetti-1.1.0.aar/ca947a48e3af43bc6f9c93924c028d50/AndroidManifest.xml:2:1-13:12
+MERGED from [com.github.captain-miao:optroundcardview:1.0.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/optroundcardview-1.0.0.aar/1e5134a14b8e7a881c47468892b07623/AndroidManifest.xml:2:1-14:12
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/b06310e7fb7e6cea0c01edaa65627b13/AndroidManifest.xml:2:1-14:12
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.6.1] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.6.1.aar/f1b5402d2daad9680b07e0a1bd7b9225/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.6.1] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/exoplayer-core-2.6.1.aar/eeec24872f3c638ffe8f65770c211b3a/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:recyclerview-v7:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.0.aar/ac4ef9a5f14b1541cb96983927810ebe/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/transition-27.1.0.aar/7d39cb0b5b3802f7b388408c9dc18060/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.0.aar/4efc27978359b805a544be1936aedbb8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.0.aar/dca32cb2068190a3ad048932010c745e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/b0a1e0bed770100cab6f86cff23c158f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/20dee49532f8e05b539b66e67672bf06/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.0.aar/75962207a8798a976ba0be5a00034b47/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.0.aar/bcb20741fc862e9e142e3ba6fca26eda/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/a7570680c65331ce57088090f5a01fc2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:exifinterface:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.0.aar/60199bf2c9fdcec1ee186c67c5c04682/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/b27bb2c470d9c17942fd5c409251ebdd/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/c247a7fa60919b74c666c52cde57b332/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/295e3064c03e7d8f3417233195a88092/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/7a1aa6720a1a1e4a2be57abe89963906/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/ce41e857d6bb96a7b93d6903d0bdc2d0/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-99:12
+INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-99:12
+INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-99:12
+	package
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:3:5-38
+		INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-99:12
+		INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-99:12
+		INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:6:22-76
+uses-permission#android.permission.READ_SMS
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:7:22-64
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:8:5-70
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:8:22-67
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:9:5-80
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:9:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:10:22-78
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:11:22-78
+application
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:13:5-97:19
+MERGED from [:katexmathview] /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/katexmathview/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-15:19
+MERGED from [:katexmathview] /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/katexmathview/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/47b00ddf87e82fc3739b10f6b242ba16/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/47b00ddf87e82fc3739b10f6b242ba16/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/bb8c1e0199644fe95a3e4ba8313d020f/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/bb8c1e0199644fe95a3e4ba8313d020f/AndroidManifest.xml:9:5-20
+MERGED from [nl.dionsegijn:konfetti:1.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/konfetti-1.1.0.aar/ca947a48e3af43bc6f9c93924c028d50/AndroidManifest.xml:11:5-53
+MERGED from [nl.dionsegijn:konfetti:1.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/konfetti-1.1.0.aar/ca947a48e3af43bc6f9c93924c028d50/AndroidManifest.xml:11:5-53
+MERGED from [com.github.captain-miao:optroundcardview:1.0.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/optroundcardview-1.0.0.aar/1e5134a14b8e7a881c47468892b07623/AndroidManifest.xml:11:5-12:19
+MERGED from [com.github.captain-miao:optroundcardview:1.0.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/optroundcardview-1.0.0.aar/1e5134a14b8e7a881c47468892b07623/AndroidManifest.xml:11:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/b06310e7fb7e6cea0c01edaa65627b13/AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/b06310e7fb7e6cea0c01edaa65627b13/AndroidManifest.xml:7:5-12:19
+	android:screenOrientation
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:19:9-45
+	android:supportsRtl
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:21:9-35
+	android:label
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:17:9-41
+	android:roundIcon
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:20:9-54
+	android:largeHeap
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:18:9-33
+	android:icon
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:16:9-49
+	android:allowBackup
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:15:9-35
+	android:theme
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:22:9-41
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:14:9-32
+activity#learnacad.learnacad.com.Activities.SplashActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:33:9-39:20
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:33:19-60
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:34:13-38:29
+action#android.intent.action.MAIN
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:35:17-69
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:35:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:37:17-77
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:37:27-74
+activity#learnacad.learnacad.com.InfoActivies.TermsandPolicyActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:40:9-42:71
+	android:parentActivityName
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:42:13-68
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:41:13-64
+activity#learnacad.learnacad.com.SignUpActivites.SignUpActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:43:9-45:71
+	android:parentActivityName
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:45:13-68
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:44:13-59
+activity#learnacad.learnacad.com.SignUpActivites.OtpActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:46:9-48:76
+	android:parentActivityName
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:48:13-73
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:47:13-56
+activity#learnacad.learnacad.com.SignUpActivites.ProfileActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:49:9-51:71
+	android:parentActivityName
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:51:13-68
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:50:13-60
+activity#com.theartofdev.edmodo.cropper.CropImageActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:52:9-54:59
+	android:theme
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:54:13-56
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:53:13-76
+activity#learnacad.learnacad.com.SignUpActivites.SigUpComplete
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:55:9-67
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:55:19-64
+activity#learnacad.learnacad.com.Activities.HomeActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:56:9-61
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:56:19-58
+activity#learnacad.learnacad.com.Activities.InstructionActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:57:9-68
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:57:19-65
+activity#learnacad.learnacad.com.InfoActivies.WinningActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:58:9-66
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:58:19-63
+activity#learnacad.learnacad.com.Activities.LeaderBoardActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:59:9-61:69
+	android:parentActivityName
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:61:13-66
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:60:13-59
+activity#learnacad.learnacad.com.Activities.QuizReviewActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:62:9-67
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:62:19-64
+activity#learnacad.learnacad.com.Activities.ShareActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:63:9-65:69
+	android:parentActivityName
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:65:13-66
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:64:13-53
+activity#learnacad.learnacad.com.InfoActivies.AboutActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:66:9-68:69
+	android:parentActivityName
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:68:13-66
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:67:13-55
+receiver#learnacad.learnacad.com.Adapters.AlarmReceiver
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:70:9-76:20
+	android:enabled
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:72:13-36
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:71:13-51
+intent-filter#android.intent.action.BOOT_COMPLETED
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:73:13-75:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:74:17-79
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:74:25-76
+receiver#learnacad.learnacad.com.Adapters.MyReceiver
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:77:9-81:20
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:77:19-54
+intent-filter#android.provider.Telephony.SMS_RECEIVED
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:78:13-80:29
+	android:priority
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:78:28-51
+action#android.provider.Telephony.SMS_RECEIVED
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:79:17-82
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:79:25-79
+activity#learnacad.learnacad.com.InfoActivies.Winners
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:83:9-85:20
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:83:19-55
+activity#learnacad.learnacad.com.InfoActivies.LosersActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:86:9-65
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:86:19-62
+activity#learnacad.learnacad.com.Game2Activity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:87:9-60
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:87:19-48
+activity#learnacad.learnacad.com.Activities.PastQuizesActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:88:9-76
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:88:19-64
+receiver#learnacad.learnacad.com.Adapters.ConnectivityReceiver
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:90:9-96:20
+	android:enabled
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:92:13-35
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:91:13-58
+intent-filter#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:93:13-95:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:94:17-79
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:94:25-76
+uses-sdk
+INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml
+INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml
+MERGED from [:katexmathview] /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/katexmathview/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:katexmathview] /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/katexmathview/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/4431855299efbf904536c5bb2bf3e994/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/4431855299efbf904536c5bb2bf3e994/AndroidManifest.xml:20:5-44
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.5.1] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.5.1.aar/109149d26e0b279f2ff44e436f265eb3/AndroidManifest.xml:8:5-10:41
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.5.1] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.5.1.aar/109149d26e0b279f2ff44e436f265eb3/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:appcompat-v7:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/b88f2c76d48537eb5654cfe79f9783b5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/b88f2c76d48537eb5654cfe79f9783b5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/47b00ddf87e82fc3739b10f6b242ba16/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/47b00ddf87e82fc3739b10f6b242ba16/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:cardview-v7:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.0.aar/ee7e4b2426a727df10c7decf3b7a02b2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.0.aar/ee7e4b2426a727df10c7decf3b7a02b2/AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/00be74d71a3b963525fd396279720a18/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/00be74d71a3b963525fd396279720a18/AndroidManifest.xml:5:5-43
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/bb8c1e0199644fe95a3e4ba8313d020f/AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/bb8c1e0199644fe95a3e4ba8313d020f/AndroidManifest.xml:5:5-7:41
+MERGED from [id.zelory:compressor:2.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/compressor-2.1.0.aar/5c31cdc1020795323cf3943885535a6e/AndroidManifest.xml:8:5-10:41
+MERGED from [id.zelory:compressor:2.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/compressor-2.1.0.aar/5c31cdc1020795323cf3943885535a6e/AndroidManifest.xml:8:5-10:41
+MERGED from [nl.dionsegijn:konfetti:1.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/konfetti-1.1.0.aar/ca947a48e3af43bc6f9c93924c028d50/AndroidManifest.xml:7:5-9:41
+MERGED from [nl.dionsegijn:konfetti:1.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/konfetti-1.1.0.aar/ca947a48e3af43bc6f9c93924c028d50/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.captain-miao:optroundcardview:1.0.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/optroundcardview-1.0.0.aar/1e5134a14b8e7a881c47468892b07623/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.captain-miao:optroundcardview:1.0.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/optroundcardview-1.0.0.aar/1e5134a14b8e7a881c47468892b07623/AndroidManifest.xml:7:5-9:41
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/b06310e7fb7e6cea0c01edaa65627b13/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/b06310e7fb7e6cea0c01edaa65627b13/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.6.1] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.6.1.aar/f1b5402d2daad9680b07e0a1bd7b9225/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.6.1] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.6.1.aar/f1b5402d2daad9680b07e0a1bd7b9225/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.6.1] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/exoplayer-core-2.6.1.aar/eeec24872f3c638ffe8f65770c211b3a/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.6.1] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/exoplayer-core-2.6.1.aar/eeec24872f3c638ffe8f65770c211b3a/AndroidManifest.xml:21:5-23:41
+MERGED from [com.android.support:recyclerview-v7:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.0.aar/ac4ef9a5f14b1541cb96983927810ebe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.0.aar/ac4ef9a5f14b1541cb96983927810ebe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/transition-27.1.0.aar/7d39cb0b5b3802f7b388408c9dc18060/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/transition-27.1.0.aar/7d39cb0b5b3802f7b388408c9dc18060/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.0.aar/4efc27978359b805a544be1936aedbb8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.0.aar/4efc27978359b805a544be1936aedbb8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.0.aar/dca32cb2068190a3ad048932010c745e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.0.aar/dca32cb2068190a3ad048932010c745e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/b0a1e0bed770100cab6f86cff23c158f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/b0a1e0bed770100cab6f86cff23c158f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/20dee49532f8e05b539b66e67672bf06/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/20dee49532f8e05b539b66e67672bf06/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.0.aar/75962207a8798a976ba0be5a00034b47/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.0.aar/75962207a8798a976ba0be5a00034b47/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.0.aar/bcb20741fc862e9e142e3ba6fca26eda/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.0.aar/bcb20741fc862e9e142e3ba6fca26eda/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/a7570680c65331ce57088090f5a01fc2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/a7570680c65331ce57088090f5a01fc2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.0.aar/60199bf2c9fdcec1ee186c67c5c04682/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.0.aar/60199bf2c9fdcec1ee186c67c5c04682/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/b27bb2c470d9c17942fd5c409251ebdd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/b27bb2c470d9c17942fd5c409251ebdd/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/c247a7fa60919b74c666c52cde57b332/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/c247a7fa60919b74c666c52cde57b332/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/295e3064c03e7d8f3417233195a88092/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/295e3064c03e7d8f3417233195a88092/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/7a1aa6720a1a1e4a2be57abe89963906/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/7a1aa6720a1a1e4a2be57abe89963906/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/ce41e857d6bb96a7b93d6903d0bdc2d0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/ce41e857d6bb96a7b93d6903d0bdc2d0/AndroidManifest.xml:20:5-44
+INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml
+INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:28:13-30:58
+	android:resource
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:30:17-55
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:29:17-67
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.71828] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/b06310e7fb7e6cea0c01edaa65627b13/AndroidManifest.xml:8:9-11:40
+	android:authorities
+		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/b06310e7fb7e6cea0c01edaa65627b13/AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/b06310e7fb7e6cea0c01edaa65627b13/AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [com.squareup.picasso:picasso:2.71828] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/b06310e7fb7e6cea0c01edaa65627b13/AndroidManifest.xml:9:13-64

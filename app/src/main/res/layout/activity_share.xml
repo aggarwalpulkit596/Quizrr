@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background"
+    tools:context="learnacad.learnacad.com.Activities.ShareActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/stars" />
+
+    <ImageView
+        android:layout_width="233dp"
+        android:layout_height="276dp"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/ovalquizin1" />
+
+
+    <ImageView
+        android:layout_width="123dp"
+        android:layout_height="186dp"
+        android:background="@drawable/ovalquiz12" />
+
+    <ImageView
+        android:layout_width="143dp"
+        android:layout_height="206dp"
+        android:background="@drawable/ovalquiz13" />
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="191dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ovalquiz2" />
+
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="141dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ovalquiz22" />
+
+
+    <ImageView
+        android:layout_width="91dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ovalquiz23" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="191dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ovalquiz31" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="131dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ovalouiz32" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ovalquiz33" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.4"
+        android:background="#1a0e49" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context="learnacad.learnacad.com.Activities.ShareActivity">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/otpbackbtnimageview"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/ic_arrow_back_black_24dp"
+                android:onClick="backbtn" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/otpbackbtnimageview"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/circular_medium"
+                android:gravity="center_horizontal"
+                android:text="Get Free Lives"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/heartllifeline"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_below="@id/textView4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/heart_rays_lifeline" />
+
+            <TextView
+                android:id="@+id/descriptiontext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/heartllifeline"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="28dp"
+                android:lineSpacingMultiplier="1.2"
+                android:fontFamily="@font/circular_book"
+                android:text="Share your referral code with friends &amp; earn free lives when they join using your code."
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/descriptiontext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/circular_medium"
+                android:text="Your Referral Code"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView6"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="27dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_round"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/shareuseranme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="70dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/circular_medium"
+                    android:onClick="share"
+                    android:padding="10dp"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/button_ripple_red"
+                    android:fontFamily="@font/circular_medium"
+                    android:onClick="share"
+                    android:paddingEnd="30dp"
+                    android:paddingStart="30dp"
+                    android:shadowColor="#66ff397f"
+                    android:text="Share" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/share"
+                android:layout_margin="24dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/whatsapp_background"
+                    android:onClick="sharetowhatsapp"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/waimage"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/whatsapp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/waimage"
+                        android:layout_alignTop="@id/waimage"
+                        android:layout_marginStart="6dp"
+                        android:gravity="center"
+                        android:layout_toEndOf="@id/waimage"
+                        android:fontFamily="@font/circular_medium"
+                        android:text="Whatsapp"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/facebook_background"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/fbimage"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/facebook_box" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/fbimage"
+                        android:layout_alignTop="@id/fbimage"
+                        android:layout_marginStart="6dp"
+                        android:gravity="center"
+                        android:onClick="share"
+                        android:layout_toEndOf="@id/fbimage"
+                        android:fontFamily="@font/circular_medium"
+                        android:text="Facebook"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="learnacad.learnacad.com">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".QuizApp"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon_circle"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:screenOrientation="portrait"
+        android:roundIcon="@drawable/app_icon_circle"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme1">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".Activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".InfoActivies.TermsandPolicyActivity"
+            android:parentActivityName=".Activities.SplashActivity" />
+        <activity
+            android:name=".SignUpActivites.SignUpActivity"
+            android:parentActivityName=".Activities.SplashActivity" />
+        <activity
+            android:name=".SignUpActivites.OtpActivity"
+            android:parentActivityName=".SignUpActivites.SignUpActivity" />
+        <activity
+            android:name=".SignUpActivites.ProfileActivity"
+            android:parentActivityName=".Activities.SplashActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".SignUpActivites.SigUpComplete" />
+        <activity android:name=".Activities.HomeActivity" />
+        <activity android:name=".Activities.InstructionActivity" />
+        <activity android:name=".InfoActivies.WinningActivity" />
+        <activity
+            android:name=".Activities.LeaderBoardActivity"
+            android:parentActivityName=".Activities.HomeActivity" />
+        <activity android:name=".Activities.QuizReviewActivity" />
+        <activity
+            android:name=".Activities.ShareActivity"
+            android:parentActivityName=".Activities.HomeActivity" />
+        <activity
+            android:name=".InfoActivies.AboutActivity"
+            android:parentActivityName=".Activities.HomeActivity" />
+
+        <receiver
+            android:name=".Adapters.AlarmReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".Adapters.MyReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".InfoActivies.Winners" >
+
+        </activity>
+        <activity android:name=".InfoActivies.LosersActivity" />
+        <activity android:name=".Game2Activity"></activity>
+        <activity android:name=".Activities.PastQuizesActivity"></activity>
+
+        <receiver
+            android:name=".Adapters.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:fillViewport="true">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#2e005b"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:id="@+id/questionnumbertextview"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/responsecardview1"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/circle_questionnumber"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/circular_medium"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/responsecardview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/responsenoofplayerimageview"
+                    android:layout_alignTop="@+id/responseimageview"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="32dp"
+                    android:elevation="0dp"
+                    card_view:cardBackgroundColor="#6216ac"
+                    card_view:cardCornerRadius="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <katex.hourglass.in.mathlib.MathView
+                            android:id="@+id/quizquestion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:textAlignment="center"
+                            app:fontFamily="@font/circular_book"
+                            app:setTextColor="#ffffff"
+                            app:setTextSize="15sp" />
+
+                        <View
+                            android:id="@+id/reponseviewline1"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_below="@id/quizquestion"
+                            android:layout_marginTop="10dp"
+                            android:background="#d9d9d9" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/reponseviewline1"
+                            android:layout_marginTop="0dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="#e9e0f2"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="15dp"
+                                    android:fontFamily="@font/circular_medium"
+                                    android:text="Your Answer Time"
+                                    android:textAlignment="center"
+                                    android:textColor="#2a2436"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/reviewyouanswertime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/circular_medium"
+                                    android:paddingBottom="10dp"
+                                    android:text="-"
+                                    android:textAlignment="center"
+                                    android:textColor="#2a2436"
+                                    android:textSize="24sp" />
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/view2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".02"
+                                android:background="#d9d9d9" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="#e9e0f2"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="15dp"
+                                    android:fontFamily="@font/circular_medium"
+                                    android:text="Quickest Answer"
+                                    android:textAlignment="center"
+                                    android:textColor="#2a2436"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/reviewleasttime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/circular_medium"
+                                    android:paddingBottom="10dp"
+                                    android:text="-"
+                                    android:textAlignment="center"
+                                    android:textColor="#2a2436"
+                                    android:textSize="24sp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <com.github.captain_miao.optroundcardview.OptRoundCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/responsecardView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/responsecardview1"
+                    android:layout_alignStart="@+id/responsecardview1"
+                    android:layout_below="@+id/responsecardview1"
+                    android:layout_marginTop="30dp"
+                    card_view:optRoundCardCornerRadius="5dp"
+                    card_view:optRoundCardLeftBottomCorner="false"
+                    card_view:optRoundCardRightBottomCorner="false">
+
+                    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/responseansbackground1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/optionimageA"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:src="@drawable/a_default" />
+
+                        <katex.hourglass.in.mathlib.MathView
+                            android:id="@+id/responseanswebview1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/optionimageA"
+                            android:fontFamily="@font/circular_medium"
+                            android:padding="0dp"
+                            android:textColor="#000000"
+                            app:setTextColor="#2a2436"
+                            app:setTextSize="11sp" />
+                    </RelativeLayout>
+
+
+                </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignEnd="@+id/responsecardview1"
+                    android:layout_alignStart="@+id/responsecardview1"
+                    android:layout_below="@id/responsecardView2"
+                    android:background="#33000000"
+                    android:elevation="4dp" />
+
+
+                <com.github.captain_miao.optroundcardview.OptRoundCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/responsecardView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/responsecardview1"
+                    android:layout_alignStart="@+id/responsecardview1"
+                    android:layout_below="@+id/responsecardView2"
+                    card_view:optRoundCardLeftBottomCorner="false"
+                    card_view:optRoundCardRightBottomCorner="false">
+
+                    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:id="@+id/responseansbackground2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/optionimageB"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:src="@drawable/b_default" />
+
+                        <katex.hourglass.in.mathlib.MathView
+                            android:id="@+id/responseanswebview2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/optionimageB"
+                            android:fontFamily="@font/circular_medium"
+                            android:padding="0dp"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            app:setTextColor="#2a2436"
+                            app:setTextSize="11sp" />
+                    </RelativeLayout>
+
+                </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignEnd="@+id/responsecardview1"
+                    android:layout_alignStart="@+id/responsecardview1"
+                    android:layout_below="@id/responsecardView3"
+                    android:background="#33000000"
+                    android:elevation="4dp" />
+
+                <com.github.captain_miao.optroundcardview.OptRoundCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/responsecardView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/responsecardview1"
+                    android:layout_alignStart="@+id/responsecardview1"
+                    android:layout_below="@+id/responsecardView3"
+                    card_view:optRoundCardLeftBottomCorner="false"
+                    card_view:optRoundCardRightBottomCorner="false">
+
+                    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:id="@+id/responseansbackground3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/optionimageC"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:src="@drawable/c_default" />
+
+                        <katex.hourglass.in.mathlib.MathView
+                            android:id="@+id/responseanswebview3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/optionimageC"
+                            android:fontFamily="@font/circular_medium"
+                            android:padding="0dp"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            app:setTextColor="#2a2436"
+                            app:setTextSize="11sp" />
+                    </RelativeLayout>
+
+
+                </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignEnd="@+id/responsecardview1"
+                    android:layout_alignStart="@+id/responsecardview1"
+                    android:layout_below="@id/responsecardView4"
+                    android:background="#33000000"
+                    android:elevation="4dp" />
+
+                <com.github.captain_miao.optroundcardview.OptRoundCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/responsecardview1"
+                    android:layout_alignStart="@+id/responsecardview1"
+                    android:layout_below="@+id/responsecardView4"
+                    android:layout_marginBottom="30dp"
+                    card_view:optRoundCardCornerRadius="4dp"
+                    card_view:optRoundCardLeftTopCorner="false"
+                    card_view:optRoundCardRightTopCorner="false">
+
+                    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:id="@+id/responseansbackground4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/optionimageD"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:src="@drawable/d_default" />
+
+                        <katex.hourglass.in.mathlib.MathView
+                            android:id="@+id/responseanswebview4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/optionimageD"
+                            android:fontFamily="@font/circular_medium"
+                            android:padding="0dp"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            app:setTextColor="#2a2436"
+                            app:setTextSize="11sp" />
+                    </RelativeLayout>
+
+
+                </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </ScrollView>
+</LinearLayout>

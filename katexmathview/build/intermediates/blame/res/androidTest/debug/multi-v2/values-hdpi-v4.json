@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/katexmathview/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.1.1.aar/bfe662d2b12754bfeef1088a735dccca/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

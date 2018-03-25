@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signupconstraintlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background"
+    tools:context="learnacad.learnacad.com.SignUpActivites.SignUpActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/stars" />
+
+
+    <ImageView
+        android:layout_width="233dp"
+        android:layout_height="276dp"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/ovalquizin1" />
+
+
+    <ImageView
+        android:layout_width="123dp"
+        android:layout_height="186dp"
+        android:background="@drawable/ovalquiz12" />
+
+    <ImageView
+        android:layout_width="143dp"
+        android:layout_height="206dp"
+        android:background="@drawable/ovalquiz13" />
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="191dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ovalquiz2" />
+
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="141dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ovalquiz22" />
+
+
+    <ImageView
+        android:layout_width="91dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ovalquiz23" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="191dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ovalquiz31" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="131dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ovalouiz32" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ovalquiz33" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.4"
+        android:background="#1a0e49" />
+
+    <ImageView
+        android:id="@+id/otpbackbtnimageview"
+        android:layout_width="30dp"
+        android:onClick="backbtn"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/ic_arrow_back_black_24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/otpbackbtnimageview"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/circular_medium"
+        android:gravity="center_horizontal"
+        android:text="Your Mobile Number"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otpbackbtnimageview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="83dp"
+        android:background="@drawable/edit_round"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/cctextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="6dp"
+            android:fontFamily="@font/circular_medium"
+            android:text="@string/_91"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/signupnumberedittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cctextview"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/cctextview"
+            android:background="@null"
+            android:fontFamily="@font/circular_book"
+            android:hint="@string/enter_your_mobile_number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColor="#fff"
+            android:textColorHint="#33ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="28dp"
+        android:lineSpacingMultiplier="1.2"
+        android:fontFamily="@font/circular_book"
+        android:text="@string/please_make_sure_you_enter_a_valid_number_linked_to_your_paytm_account"
+        android:textAlignment="center"
+        android:textColor="#BFFFFFFF"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="50dp"
+        android:layout_height="200dp">
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:alpha="0.5"
+        android:clickable="false"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="72dp"
+        android:background="@drawable/button_ripple_red"
+        android:fontFamily="@font/circular_medium"
+        android:onClick="signupbtn"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

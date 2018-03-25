@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Quizrr</string>
+    <string name="enter_your_mobile_number">Enter your mobile number</string>
+    <string name="_91">+91</string>
+    <string name="please_make_sure_you_enter_a_valid_number_linked_to_your_paytm_account">Please make sure you enter a valid number linked to your Paytm account.</string>
+
+</resources>
