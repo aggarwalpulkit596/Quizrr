@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context="learnacad.learnacad.com.InfoActivies.WinningActivity">
+    tools:context="quizrr.quizrr.com.learnacad.learnacad.quizrr.InfoActivies.WinningActivity">
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/custom_background"
 
-        tools:context="learnacad.learnacad.com.InfoActivies.WinningActivity">
+        tools:context="quizrr.quizrr.com.learnacad.learnacad.quizrr.InfoActivies.WinningActivity">
 
         <ImageView
             android:layout_width="match_parent"

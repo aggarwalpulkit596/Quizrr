@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="78dp">
+
+
+    <TextView
+        android:id="@+id/datetextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="25dp"
+        android:text="21 Mar"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/topictextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/datetextview"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="47dp"
+        android:layout_toEndOf="@+id/datetextview"
+        android:text="Application of Derivatives"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignParentBottom="true"
+        android:background="#33ffffff" />
+
+    <TextView
+        android:id="@+id/leaderboardtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#80ffffff"
+        android:textSize="16sp"
+        android:layout_alignStart="@+id/topictextview"
+        android:layout_below="@+id/topictextview"
+        android:text="REVIEW QUIZ" />
+
+    <TextView
+        android:id="@+id/quizreviewtextview"
+        android:layout_width="wrap_content"
+        android:textColor="#80ffffff"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/leaderboardtextview"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/leaderboardtextview"
+        android:text="LEADERBAORD" />
+</RelativeLayout>

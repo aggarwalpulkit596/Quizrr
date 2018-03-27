@@ -81,9 +81,9 @@ public final class R {
         public static final int fit = 0x7f0a007a;
         public static final int fixed_height = 0x7f0a007d;
         public static final int fixed_width = 0x7f0a007e;
-        public static final int none = 0x7f0a00ba;
-        public static final int surface_view = 0x7f0a0166;
-        public static final int texture_view = 0x7f0a017a;
+        public static final int none = 0x7f0a00bb;
+        public static final int surface_view = 0x7f0a0167;
+        public static final int texture_view = 0x7f0a017b;
     }
     public static final class layout {
         public static final int exo_playback_control_view = 0x7f0c0042;

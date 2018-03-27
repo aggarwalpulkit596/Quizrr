@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/custom_background"
-    tools:context="learnacad.learnacad.com.InfoActivies.AboutActivity">
+    tools:context="quizrr.quizrr.com.learnacad.learnacad.quizrr.InfoActivies.AboutActivity">
 
     <ImageView
         android:layout_width="match_parent"
@@ -169,7 +169,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="44dp"
         android:background="@drawable/button_ripple_red"
-        android:src="@drawable/help_circle" />
+        android:src="@drawable/rules_circle" />
 
     <TextView
         android:id="@+id/rulesButtontext"
@@ -202,7 +202,7 @@
         android:layout_marginTop="8dp"
         android:layout_toEndOf="@+id/howtoplayButton"
         android:fontFamily="@font/circular_book"
-        android:text="How To Play"
+        android:text="How to Play"
         android:textColor="#fff"
         android:textSize="20sp" />
 

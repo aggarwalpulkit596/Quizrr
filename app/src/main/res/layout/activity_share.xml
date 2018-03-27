@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/custom_background"
-    tools:context="learnacad.learnacad.com.Activities.ShareActivity">
+    tools:context="quizrr.quizrr.com.learnacad.learnacad.quizrr.Activities.ShareActivity">
 
     <ImageView
         android:layout_width="match_parent"
@@ -84,7 +84,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
-        tools:context="learnacad.learnacad.com.Activities.ShareActivity">
+        tools:context="quizrr.quizrr.com.learnacad.learnacad.quizrr.Activities.ShareActivity">
 
 
         <RelativeLayout

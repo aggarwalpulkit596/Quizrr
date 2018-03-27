@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/custom_background"
-    tools:context="learnacad.learnacad.com.Activities.InstructionActivity">
+    tools:context="quizrr.quizrr.com.learnacad.learnacad.quizrr.Activities.InstructionActivity">
 
     <ImageView
         android:layout_width="match_parent"
@@ -117,7 +117,7 @@
         android:textColor="#ffff"
         android:textSize="20sp" />
 
-    <learnacad.learnacad.com.Adapters.ViewPagerCustomDuration
+    <quizrr.quizrr.quizrr.Adapters.ViewPagerCustomDuration
         android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="250dp"

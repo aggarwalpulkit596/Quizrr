@@ -128,38 +128,6 @@
             ]
         },
         {
-            "outputFile": "/Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/build/intermediates/res/merged/debug/values-ka_values-ka.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/b88f2c76d48537eb5654cfe79f9783b5/res/values-ka/values-ka.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,214,318,429,517,622,735,819,901,984,1097,1204,1302,1415,1519,1623,1780,1878",
-                        "endColumns": "108,103,110,87,104,112,83,81,82,112,106,97,112,103,103,156,97,80",
-                        "endOffsets": "209,313,424,512,617,730,814,896,979,1092,1199,1297,1410,1514,1618,1775,1873,1954"
-                    }
-                },
-                {
-                    "source": "/Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/b27bb2c470d9c17942fd5c409251ebdd/res/values-ka/values-ka.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1959",
-                        "endColumns": "100",
-                        "endOffsets": "2055"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/build/intermediates/res/merged/debug/values-pt_values-pt.arsc.flat",
             "map": [
                 {
@@ -211,6 +179,38 @@
                         "startOffsets": "105,225,331,438,527,628,746,829,909,996,1103,1215,1317,1425,1532,1642,1804,2734",
                         "endColumns": "119,105,106,88,100,117,82,79,86,106,111,101,107,106,109,161,99,84",
                         "endOffsets": "220,326,433,522,623,741,824,904,991,1098,1210,1312,1420,1527,1637,1799,1899,2814"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/build/intermediates/res/merged/debug/values-ka_values-ka.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/b88f2c76d48537eb5654cfe79f9783b5/res/values-ka/values-ka.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,214,318,429,517,622,735,819,901,984,1097,1204,1302,1415,1519,1623,1780,1878",
+                        "endColumns": "108,103,110,87,104,112,83,81,82,112,106,97,112,103,103,156,97,80",
+                        "endOffsets": "209,313,424,512,617,730,814,896,979,1092,1199,1297,1410,1514,1618,1775,1873,1954"
+                    }
+                },
+                {
+                    "source": "/Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/b27bb2c470d9c17942fd5c409251ebdd/res/values-ka/values-ka.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "1959",
+                        "endColumns": "100",
+                        "endOffsets": "2055"
                     }
                 }
             ]
@@ -540,36 +540,6 @@
             ]
         },
         {
-            "outputFile": "/Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/build/intermediates/res/merged/debug/values-is-rIS_values-is-rIS.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.6.1.aar/f1b5402d2daad9680b07e0a1bd7b9225/res/values-is-rIS/values-is-rIS.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,134,204,269,335,409,490,573,654,731,801",
-                        "endColumns": "78,69,64,65,73,80,82,80,76,69,66",
-                        "endOffsets": "129,199,264,330,404,485,568,649,726,796,863"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/build/intermediates/res/merged/debug/values-my-rMM_values-my-rMM.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.6.1.aar/f1b5402d2daad9680b07e0a1bd7b9225/res/values-my-rMM/values-my-rMM.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,139,213,283,352,429,520,604,696,769,851",
-                        "endColumns": "83,73,69,68,76,90,83,91,72,81,66",
-                        "endOffsets": "134,208,278,347,424,515,599,691,764,846,913"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/build/intermediates/res/merged/debug/values-ru_values-ru.arsc.flat",
             "map": [
                 {
@@ -621,6 +591,36 @@
                         "startOffsets": "2834",
                         "endColumns": "100",
                         "endOffsets": "2930"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/build/intermediates/res/merged/debug/values-my-rMM_values-my-rMM.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.6.1.aar/f1b5402d2daad9680b07e0a1bd7b9225/res/values-my-rMM/values-my-rMM.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,139,213,283,352,429,520,604,696,769,851",
+                        "endColumns": "83,73,69,68,76,90,83,91,72,81,66",
+                        "endOffsets": "134,208,278,347,424,515,599,691,764,846,913"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/build/intermediates/res/merged/debug/values-is-rIS_values-is-rIS.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.6.1.aar/f1b5402d2daad9680b07e0a1bd7b9225/res/values-is-rIS/values-is-rIS.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,134,204,269,335,409,490,573,654,731,801",
+                        "endColumns": "78,69,64,65,73,80,82,80,76,69,66",
+                        "endOffsets": "129,199,264,330,404,485,568,649,726,796,863"
                     }
                 }
             ]
@@ -1013,21 +1013,6 @@
             ]
         },
         {
-            "outputFile": "/Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/build/intermediates/res/merged/debug/values-sq-rAL_values-sq-rAL.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.6.1.aar/f1b5402d2daad9680b07e0a1bd7b9225/res/values-sq-rAL/values-sq-rAL.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,143,216,283,348,430,515,598,679,752,823",
-                        "endColumns": "87,72,66,64,81,84,82,80,72,70,65",
-                        "endOffsets": "138,211,278,343,425,510,593,674,747,818,884"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/build/intermediates/res/merged/debug/values-pt-rBR_values-pt-rBR.arsc.flat",
             "map": [
                 {
@@ -1096,6 +1081,21 @@
                         "startOffsets": "3388",
                         "endColumns": "100",
                         "endOffsets": "3484"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/build/intermediates/res/merged/debug/values-sq-rAL_values-sq-rAL.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.6.1.aar/f1b5402d2daad9680b07e0a1bd7b9225/res/values-sq-rAL/values-sq-rAL.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,143,216,283,348,430,515,598,679,752,823",
+                        "endColumns": "87,72,66,64,81,84,82,80,72,70,65",
+                        "endOffsets": "138,211,278,343,425,510,593,674,747,818,884"
                     }
                 }
             ]

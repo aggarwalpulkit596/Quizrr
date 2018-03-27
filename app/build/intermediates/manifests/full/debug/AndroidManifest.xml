@@ -17,7 +17,7 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
-        android:name="learnacad.learnacad.com.QuizApp"
+        android:name="quizrr.quizrr.quizrr.QuizApp"
         android:allowBackup="true"
         android:debuggable="true"
         android:icon="@drawable/app_icon_rounded"
@@ -26,6 +26,7 @@
         android:roundIcon="@drawable/app_icon_circle"
         android:screenOrientation="portrait"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme1" >
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -37,7 +38,7 @@
                 android:resource="@xml/provider_paths" />
         </provider>
 
-        <activity android:name="learnacad.learnacad.com.Activities.SplashActivity" >
+        <activity android:name="quizrr.quizrr.quizrr.Activities.SplashActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -45,62 +46,63 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="learnacad.learnacad.com.InfoActivies.TermsandPolicyActivity"
-            android:parentActivityName="learnacad.learnacad.com.Activities.SplashActivity" />
+            android:name="quizrr.quizrr.quizrr.InfoActivies.TermsandPolicyActivity"
+            android:parentActivityName="quizrr.quizrr.quizrr.Activities.SplashActivity" />
         <activity
-            android:name="learnacad.learnacad.com.SignUpActivites.SignUpActivity"
-            android:parentActivityName="learnacad.learnacad.com.Activities.SplashActivity" />
+            android:name="quizrr.quizrr.quizrr.SignUpActivites.SignUpActivity"
+            android:parentActivityName="quizrr.quizrr.quizrr.Activities.SplashActivity" />
         <activity
-            android:name="learnacad.learnacad.com.SignUpActivites.OtpActivity"
-            android:parentActivityName="learnacad.learnacad.com.SignUpActivites.SignUpActivity" />
+            android:name="quizrr.quizrr.quizrr.SignUpActivites.OtpActivity"
+            android:parentActivityName="quizrr.quizrr.quizrr.SignUpActivites.SignUpActivity" />
         <activity
-            android:name="learnacad.learnacad.com.SignUpActivites.ProfileActivity"
-            android:parentActivityName="learnacad.learnacad.com.Activities.SplashActivity" />
+            android:name="quizrr.quizrr.quizrr.SignUpActivites.ProfileActivity"
+            android:parentActivityName="quizrr.quizrr.quizrr.Activities.SplashActivity" />
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
-        <activity android:name="learnacad.learnacad.com.SignUpActivites.SigUpComplete" />
-        <activity android:name="learnacad.learnacad.com.Activities.HomeActivity" />
-        <activity android:name="learnacad.learnacad.com.Activities.InstructionActivity" />
-        <activity android:name="learnacad.learnacad.com.InfoActivies.WinningActivity" />
+        <activity android:name="quizrr.quizrr.quizrr.SignUpActivites.SigUpComplete" />
+        <activity android:name="quizrr.quizrr.quizrr.Activities.HomeActivity" />
+        <activity android:name="quizrr.quizrr.quizrr.Activities.InstructionActivity" />
+        <activity android:name="quizrr.quizrr.quizrr.InfoActivies.WinningActivity" />
         <activity
-            android:name="learnacad.learnacad.com.Activities.LeaderBoardActivity"
-            android:parentActivityName="learnacad.learnacad.com.Activities.HomeActivity" />
-        <activity android:name="learnacad.learnacad.com.Activities.QuizReviewActivity" />
+            android:name="quizrr.quizrr.quizrr.Activities.LeaderBoardActivity"
+            android:parentActivityName="quizrr.quizrr.quizrr.Activities.HomeActivity" />
+        <activity android:name="quizrr.quizrr.quizrr.Activities.QuizReviewActivity" />
         <activity
-            android:name="learnacad.learnacad.com.Activities.ShareActivity"
-            android:parentActivityName="learnacad.learnacad.com.Activities.HomeActivity" />
+            android:name="quizrr.quizrr.quizrr.Activities.ShareActivity"
+            android:parentActivityName="quizrr.quizrr.quizrr.Activities.HomeActivity" />
         <activity
-            android:name="learnacad.learnacad.com.InfoActivies.AboutActivity"
-            android:parentActivityName="learnacad.learnacad.com.Activities.HomeActivity" />
+            android:name="quizrr.quizrr.quizrr.InfoActivies.AboutActivity"
+            android:parentActivityName="quizrr.quizrr.quizrr.Activities.HomeActivity" />
 
         <receiver
-            android:name="learnacad.learnacad.com.Adapters.AlarmReceiver"
+            android:name="quizrr.quizrr.quizrr.Adapters.AlarmReceiver"
             android:enabled="false" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-        <receiver android:name="learnacad.learnacad.com.Adapters.MyReceiver" >
+        <receiver android:name="quizrr.quizrr.quizrr.Adapters.MyReceiver" >
             <intent-filter android:priority="1000" >
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
 
-        <activity android:name="learnacad.learnacad.com.InfoActivies.Winners" />
-        <activity android:name="learnacad.learnacad.com.InfoActivies.LosersActivity" />
-        <activity android:name="learnacad.learnacad.com.Game2Activity" />
-        <activity android:name="learnacad.learnacad.com.Activities.PastQuizesActivity" />
+        <activity android:name="quizrr.quizrr.quizrr.InfoActivies.Winners" />
+        <activity android:name="quizrr.quizrr.quizrr.InfoActivies.LosersActivity" />
+        <activity android:name="quizrr.quizrr.quizrr.Game2Activity" />
+        <activity android:name="quizrr.quizrr.quizrr.Activities.PastQuizesActivity" />
 
         <receiver
-            android:name="learnacad.learnacad.com.Adapters.ConnectivityReceiver"
+            android:name="quizrr.quizrr.quizrr.Adapters.ConnectivityReceiver"
             android:enabled="true" >
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
         </receiver>
 
-        <activity android:name="learnacad.learnacad.com.Activities.TourActivity" />
+        <activity android:name="quizrr.quizrr.quizrr.Activities.TourActivity" />
+        <activity android:name="quizrr.quizrr.quizrr.InfoActivies.FutureeventsActivity" />
 
         <provider
             android:name="com.squareup.picasso.PicassoProvider"

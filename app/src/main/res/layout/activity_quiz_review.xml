@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2e005b"
-    tools:context="learnacad.learnacad.com.Activities.QuizReviewActivity">
+    tools:context="quizrr.quizrr.com.learnacad.learnacad.quizrr.Activities.QuizReviewActivity">
 
     <ImageView
         android:id="@+id/otpbackbtnimageview"

@@ -8,7 +8,7 @@
     android:background="@drawable/custom_background"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context="learnacad.learnacad.com.Activities.LeaderBoardActivity">
+    tools:context="quizrr.quizrr.com.learnacad.learnacad.quizrr.Activities.LeaderBoardActivity">
 
     <ImageView
         android:layout_width="match_parent"

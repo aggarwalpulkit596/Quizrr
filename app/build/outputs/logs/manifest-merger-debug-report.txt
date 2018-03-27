@@ -11,10 +11,10 @@ INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b3735
 	android:name
 		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:24:13-67
 manifest
-ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-99:12
-INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-99:12
-INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-99:12
-INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-99:12
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-100:12
+INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-100:12
+INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-100:12
+INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-100:12
 MERGED from [:katexmathview] /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/katexmathview/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [com.android.support:design:27.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/design-27.1.0.aar/4431855299efbf904536c5bb2bf3e994/AndroidManifest.xml:17:1-22:12
 MERGED from [com.theartofdev.edmodo:android-image-cropper:2.5.1] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.5.1.aar/109149d26e0b279f2ff44e436f265eb3/AndroidManifest.xml:2:1-12:12
@@ -44,20 +44,20 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/pulkit-mac/.grad
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/295e3064c03e7d8f3417233195a88092/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/7a1aa6720a1a1e4a2be57abe89963906/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/ce41e857d6bb96a7b93d6903d0bdc2d0/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-99:12
-INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-99:12
-INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-99:12
+INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-100:12
+INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-100:12
+INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-100:12
 	package
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:3:5-38
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:3:5-32
 		INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-99:12
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-100:12
 		INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-99:12
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:1-100:12
 		INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:2:11-69
@@ -90,7 +90,7 @@ ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2
 	android:name
 		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:11:22-78
 application
-ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:13:5-97:19
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:13:5-98:19
 MERGED from [:katexmathview] /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/katexmathview/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-15:19
 MERGED from [:katexmathview] /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/katexmathview/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-15:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/pulkit-mac/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/47b00ddf87e82fc3739b10f6b242ba16/AndroidManifest.xml:9:5-20
@@ -120,11 +120,11 @@ MERGED from [com.squareup.picasso:picasso:2.71828] /Users/pulkit-mac/.gradle/cac
 	android:theme
 		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:22:9-41
 	android:name
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:14:9-32
-activity#learnacad.learnacad.com.Activities.SplashActivity
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:14:9-52
+activity#quizrr.quizrr.quizrr.Activities.SplashActivity
 ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:33:9-39:20
 	android:name
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:33:19-60
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:33:19-80
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
 ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:34:13-38:29
 action#android.intent.action.MAIN
@@ -135,90 +135,90 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:37:17-77
 	android:name
 		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:37:27-74
-activity#learnacad.learnacad.com.InfoActivies.TermsandPolicyActivity
-ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:40:9-42:71
+activity#quizrr.quizrr.quizrr.InfoActivies.TermsandPolicyActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:40:9-42:91
 	android:parentActivityName
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:42:13-68
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:42:13-88
 	android:name
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:41:13-64
-activity#learnacad.learnacad.com.SignUpActivites.SignUpActivity
-ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:43:9-45:71
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:41:13-84
+activity#quizrr.quizrr.quizrr.SignUpActivites.SignUpActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:43:9-45:91
 	android:parentActivityName
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:45:13-68
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:45:13-88
 	android:name
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:44:13-59
-activity#learnacad.learnacad.com.SignUpActivites.OtpActivity
-ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:46:9-48:76
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:44:13-79
+activity#quizrr.quizrr.quizrr.SignUpActivites.OtpActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:46:9-48:96
 	android:parentActivityName
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:48:13-73
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:48:13-93
 	android:name
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:47:13-56
-activity#learnacad.learnacad.com.SignUpActivites.ProfileActivity
-ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:49:9-51:71
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:47:13-76
+activity#quizrr.quizrr.quizrr.SignUpActivites.ProfileActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:49:9-51:91
 	android:parentActivityName
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:51:13-68
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:51:13-88
 	android:name
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:50:13-60
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:50:13-80
 activity#com.theartofdev.edmodo.cropper.CropImageActivity
 ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:52:9-54:59
 	android:theme
 		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:54:13-56
 	android:name
 		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:53:13-76
-activity#learnacad.learnacad.com.SignUpActivites.SigUpComplete
-ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:55:9-67
+activity#quizrr.quizrr.quizrr.SignUpActivites.SigUpComplete
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:55:9-87
 	android:name
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:55:19-64
-activity#learnacad.learnacad.com.Activities.HomeActivity
-ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:56:9-61
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:55:19-84
+activity#quizrr.quizrr.quizrr.Activities.HomeActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:56:9-81
 	android:name
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:56:19-58
-activity#learnacad.learnacad.com.Activities.InstructionActivity
-ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:57:9-68
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:56:19-78
+activity#quizrr.quizrr.quizrr.Activities.InstructionActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:57:9-88
 	android:name
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:57:19-65
-activity#learnacad.learnacad.com.InfoActivies.WinningActivity
-ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:58:9-66
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:57:19-85
+activity#quizrr.quizrr.quizrr.InfoActivies.WinningActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:58:9-86
 	android:name
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:58:19-63
-activity#learnacad.learnacad.com.Activities.LeaderBoardActivity
-ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:59:9-61:69
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:58:19-83
+activity#quizrr.quizrr.quizrr.Activities.LeaderBoardActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:59:9-61:89
 	android:parentActivityName
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:61:13-66
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:61:13-86
 	android:name
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:60:13-59
-activity#learnacad.learnacad.com.Activities.QuizReviewActivity
-ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:62:9-67
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:60:13-79
+activity#quizrr.quizrr.quizrr.Activities.QuizReviewActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:62:9-87
 	android:name
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:62:19-64
-activity#learnacad.learnacad.com.Activities.ShareActivity
-ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:63:9-65:69
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:62:19-84
+activity#quizrr.quizrr.quizrr.Activities.ShareActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:63:9-65:89
 	android:parentActivityName
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:65:13-66
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:65:13-86
 	android:name
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:64:13-53
-activity#learnacad.learnacad.com.InfoActivies.AboutActivity
-ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:66:9-68:69
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:64:13-73
+activity#quizrr.quizrr.quizrr.InfoActivies.AboutActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:66:9-68:89
 	android:parentActivityName
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:68:13-66
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:68:13-86
 	android:name
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:67:13-55
-receiver#learnacad.learnacad.com.Adapters.AlarmReceiver
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:67:13-75
+receiver#quizrr.quizrr.quizrr.Adapters.AlarmReceiver
 ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:70:9-76:20
 	android:enabled
 		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:72:13-36
 	android:name
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:71:13-51
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:71:13-71
 intent-filter#android.intent.action.BOOT_COMPLETED
 ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:73:13-75:29
 action#android.intent.action.BOOT_COMPLETED
 ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:74:17-79
 	android:name
 		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:74:25-76
-receiver#learnacad.learnacad.com.Adapters.MyReceiver
+receiver#quizrr.quizrr.quizrr.Adapters.MyReceiver
 ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:77:9-81:20
 	android:name
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:77:19-54
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:77:19-74
 intent-filter#android.provider.Telephony.SMS_RECEIVED
 ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:78:13-80:29
 	android:priority
@@ -227,38 +227,42 @@ action#android.provider.Telephony.SMS_RECEIVED
 ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:79:17-82
 	android:name
 		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:79:25-79
-activity#learnacad.learnacad.com.InfoActivies.Winners
-ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:83:9-67
+activity#quizrr.quizrr.quizrr.InfoActivies.Winners
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:83:9-78
 	android:name
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:83:19-55
-activity#learnacad.learnacad.com.InfoActivies.LosersActivity
-ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:84:9-65
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:83:19-75
+activity#quizrr.quizrr.quizrr.InfoActivies.LosersActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:84:9-85
 	android:name
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:84:19-62
-activity#learnacad.learnacad.com.Game2Activity
-ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:85:9-51
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:84:19-82
+activity#quizrr.quizrr.quizrr.Game2Activity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:85:9-71
 	android:name
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:85:19-48
-activity#learnacad.learnacad.com.Activities.PastQuizesActivity
-ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:86:9-67
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:85:19-68
+activity#quizrr.quizrr.quizrr.Activities.PastQuizesActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:86:9-87
 	android:name
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:86:19-64
-receiver#learnacad.learnacad.com.Adapters.ConnectivityReceiver
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:86:19-84
+receiver#quizrr.quizrr.quizrr.Adapters.ConnectivityReceiver
 ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:88:9-94:20
 	android:enabled
 		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:90:13-35
 	android:name
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:89:13-58
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:89:13-78
 intent-filter#android.net.conn.CONNECTIVITY_CHANGE
 ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:91:13-93:29
 action#android.net.conn.CONNECTIVITY_CHANGE
 ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:92:17-79
 	android:name
 		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:92:25-76
-activity#learnacad.learnacad.com.Activities.TourActivity
-ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:96:9-70
+activity#quizrr.quizrr.quizrr.Activities.TourActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:96:9-81
 	android:name
-		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:96:19-58
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:96:19-78
+activity#quizrr.quizrr.quizrr.InfoActivies.FutureeventsActivity
+ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:97:9-100
+	android:name
+		ADDED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml:97:19-88
 uses-sdk
 INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/pulkit-mac/Downloads/Quizrr-63f2e233e776c4d5a7e1dd1bd4b37359a2901d72/app/src/main/AndroidManifest.xml

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="learnacad.learnacad.com">
+    package="quizrr.quizrr.com">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -11,7 +11,7 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
-        android:name=".QuizApp"
+        android:name="quizrr.quizrr.quizrr.QuizApp"
         android:allowBackup="true"
         android:icon="@drawable/app_icon_rounded"
         android:label="@string/app_name"
@@ -30,7 +30,7 @@
                 android:resource="@xml/provider_paths" />
         </provider>
 
-        <activity android:name=".Activities.SplashActivity">
+        <activity android:name="quizrr.quizrr.quizrr.Activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -38,62 +38,63 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".InfoActivies.TermsandPolicyActivity"
-            android:parentActivityName=".Activities.SplashActivity" />
+            android:name="quizrr.quizrr.quizrr.InfoActivies.TermsandPolicyActivity"
+            android:parentActivityName="quizrr.quizrr.quizrr.Activities.SplashActivity" />
         <activity
-            android:name=".SignUpActivites.SignUpActivity"
-            android:parentActivityName=".Activities.SplashActivity" />
+            android:name="quizrr.quizrr.quizrr.SignUpActivites.SignUpActivity"
+            android:parentActivityName="quizrr.quizrr.quizrr.Activities.SplashActivity" />
         <activity
-            android:name=".SignUpActivites.OtpActivity"
-            android:parentActivityName=".SignUpActivites.SignUpActivity" />
+            android:name="quizrr.quizrr.quizrr.SignUpActivites.OtpActivity"
+            android:parentActivityName="quizrr.quizrr.quizrr.SignUpActivites.SignUpActivity" />
         <activity
-            android:name=".SignUpActivites.ProfileActivity"
-            android:parentActivityName=".Activities.SplashActivity" />
+            android:name="quizrr.quizrr.quizrr.SignUpActivites.ProfileActivity"
+            android:parentActivityName="quizrr.quizrr.quizrr.Activities.SplashActivity" />
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
-        <activity android:name=".SignUpActivites.SigUpComplete" />
-        <activity android:name=".Activities.HomeActivity" />
-        <activity android:name=".Activities.InstructionActivity" />
-        <activity android:name=".InfoActivies.WinningActivity" />
+        <activity android:name="quizrr.quizrr.quizrr.SignUpActivites.SigUpComplete" />
+        <activity android:name="quizrr.quizrr.quizrr.Activities.HomeActivity" />
+        <activity android:name="quizrr.quizrr.quizrr.Activities.InstructionActivity" />
+        <activity android:name="quizrr.quizrr.quizrr.InfoActivies.WinningActivity" />
         <activity
-            android:name=".Activities.LeaderBoardActivity"
-            android:parentActivityName=".Activities.HomeActivity" />
-        <activity android:name=".Activities.QuizReviewActivity" />
+            android:name="quizrr.quizrr.quizrr.Activities.LeaderBoardActivity"
+            android:parentActivityName="quizrr.quizrr.quizrr.Activities.HomeActivity" />
+        <activity android:name="quizrr.quizrr.quizrr.Activities.QuizReviewActivity" />
         <activity
-            android:name=".Activities.ShareActivity"
-            android:parentActivityName=".Activities.HomeActivity" />
+            android:name="quizrr.quizrr.quizrr.Activities.ShareActivity"
+            android:parentActivityName="quizrr.quizrr.quizrr.Activities.HomeActivity" />
         <activity
-            android:name=".InfoActivies.AboutActivity"
-            android:parentActivityName=".Activities.HomeActivity" />
+            android:name="quizrr.quizrr.quizrr.InfoActivies.AboutActivity"
+            android:parentActivityName="quizrr.quizrr.quizrr.Activities.HomeActivity" />
 
         <receiver
-            android:name=".Adapters.AlarmReceiver"
+            android:name="quizrr.quizrr.quizrr.Adapters.AlarmReceiver"
             android:enabled="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".Adapters.MyReceiver">
+        <receiver android:name="quizrr.quizrr.quizrr.Adapters.MyReceiver">
             <intent-filter android:priority="1000">
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
 
-        <activity android:name=".InfoActivies.Winners"></activity>
-        <activity android:name=".InfoActivies.LosersActivity" />
-        <activity android:name=".Game2Activity" />
-        <activity android:name=".Activities.PastQuizesActivity" />
+        <activity android:name="quizrr.quizrr.quizrr.InfoActivies.Winners" />
+        <activity android:name="quizrr.quizrr.quizrr.InfoActivies.LosersActivity" />
+        <activity android:name="quizrr.quizrr.quizrr.Game2Activity" />
+        <activity android:name="quizrr.quizrr.quizrr.Activities.PastQuizesActivity" />
 
         <receiver
-            android:name=".Adapters.ConnectivityReceiver"
+            android:name="quizrr.quizrr.quizrr.Adapters.ConnectivityReceiver"
             android:enabled="true">
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
         </receiver>
 
-        <activity android:name=".Activities.TourActivity"></activity>
+        <activity android:name="quizrr.quizrr.quizrr.Activities.TourActivity" />
+        <activity android:name="quizrr.quizrr.quizrr.InfoActivies.FutureeventsActivity"></activity>
     </application>
 
 </manifest>

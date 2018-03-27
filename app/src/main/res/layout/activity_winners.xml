@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/custom_background"
-    tools:context="learnacad.learnacad.com.InfoActivies.Winners">
+    tools:context="quizrr.quizrr.com.learnacad.learnacad.quizrr.InfoActivies.Winners">
 
     <nl.dionsegijn.konfetti.KonfettiView
         android:id="@+id/winnerconfetti"
@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
-        tools:context="learnacad.learnacad.com.InfoActivies.Winners">
+        tools:context="quizrr.quizrr.com.learnacad.learnacad.quizrr.InfoActivies.Winners">
 
         <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"

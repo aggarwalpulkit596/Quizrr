@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/custom_background"
-    tools:context="learnacad.learnacad.com.Activities.TourActivity">
+    tools:context="quizrr.quizrr.com.learnacad.learnacad.quizrr.Activities.TourActivity">
 
     <ImageView
         android:layout_width="match_parent"
@@ -80,11 +80,12 @@
         android:background="#1a0e49" />
 
 
-    <learnacad.learnacad.com.Adapters.ViewPagerCustomDuration
+    <quizrr.quizrr.quizrr.Adapters.ViewPagerCustomDuration
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/viewPagerCountDots"
+        android:layout_marginBottom="10dp"
         android:layout_alignParentStart="true" />
 
     <LinearLayout
@@ -98,16 +99,17 @@
         android:layout_marginStart="24dp"
         android:orientation="horizontal" />
 
-    <Button
+    <ImageButton
         android:id="@+id/nextbutton"
-        android:layout_width="56dp"
-        android:onClick="nextbtn"
-        android:layout_height="56dp"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="32dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginStart="64dp"
         android:layout_toEndOf="@id/viewPagerCountDots"
         android:background="@drawable/button_ripple_red"
-        android:text="Go"
+        android:onClick="nextbtn"
+        android:src="@drawable/tick"
         android:visibility="gone" />
 </RelativeLayout>
