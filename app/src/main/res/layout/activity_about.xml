@@ -183,13 +183,36 @@
         android:text="Rules"
         android:textColor="#fff"
         android:textSize="20sp" />
+    <ImageButton
+        android:id="@+id/howtoplayButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rulesButton"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/button_ripple_red"
+        android:src="@drawable/help_circle" />
+    <TextView
+        android:id="@+id/howtoplayButtontext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/howtoplayButton"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/howtoplayButton"
+        android:fontFamily="@font/circular_book"
+        android:text="How To Play"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
 
     <ImageButton
         android:id="@+id/ratebutton"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/rulesButton"
+        android:layout_below="@+id/howtoplayButton"
         android:layout_marginStart="24dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/button_ripple_red"

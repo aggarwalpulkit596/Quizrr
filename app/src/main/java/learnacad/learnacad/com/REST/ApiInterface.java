@@ -59,9 +59,6 @@ public interface ApiInterface {
     @GET("users")
     Call<userfields> user(@Header("token") String token);
 
-    @GET("quiz/{quizid}")
-    Call<QuizResults> quizevent(@Path("quizid") String quizid);
-
     @Multipart
     @POST("users/changeprofile")
     Call<JsonObject> changeprofile(@Header("token") String token, @Part MultipartBody.Part image);

@@ -61,9 +61,8 @@ public class SplashActivity extends AppCompatActivity implements View.OnClickLis
         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
+        QuizApp.getPreferenceManager().getString(MyPreferenceManager.FIRSTTIME).equals("false");
         ButterKnife.bind(this);
-
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override

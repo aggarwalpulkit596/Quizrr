@@ -15,6 +15,7 @@ import butterknife.BindView;
 import butterknife.BindViews;
 import butterknife.ButterKnife;
 import learnacad.learnacad.com.Activities.HomeActivity;
+import learnacad.learnacad.com.Activities.TourActivity;
 import learnacad.learnacad.com.QuizApp;
 import learnacad.learnacad.com.R;
 
@@ -25,9 +26,9 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
     TextView aboutuspolicy;
     @BindView(R.id.appversiontext)
     TextView Appversion;
-    @BindViews({R.id.logoutbuttontext,R.id.ratebuttontext,R.id.rulesButtontext})
+    @BindViews({R.id.logoutbuttontext, R.id.ratebuttontext, R.id.rulesButtontext, R.id.howtoplayButtontext})
     TextView[] texts;
-    @BindViews({R.id.instabutton, R.id.fbbutton, R.id.twitterbutton,R.id.rulesButton,R.id.logoutbutton,R.id.ratebutton})
+    @BindViews({R.id.instabutton, R.id.fbbutton, R.id.twitterbutton, R.id.rulesButton, R.id.logoutbutton, R.id.ratebutton, R.id.howtoplayButton})
     ImageButton[] buttons;
 
 
@@ -39,10 +40,10 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
         ButterKnife.bind(this);
         aboutuspolicy.setOnClickListener(this);
         aboutusterms.setOnClickListener(this);
-        Appversion.setText("App Version 3.8");
-        for(int i =0;i<6;i++)
+        Appversion.setText("App Version 4.0");
+        for (int i = 0; i < 7; i++)
             buttons[i].setOnClickListener(this);
-        for(int i =0;i<3;i++)
+        for (int i = 0; i < 4; i++)
             texts[i].setOnClickListener(this);
     }
 
@@ -60,6 +61,11 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
                 i.putExtra("type", "policy");
                 startActivity(i);
                 break;
+            case R.id.howtoplayButton:
+                i = new Intent(AboutActivity.this, TourActivity.class);
+                startActivity(i);
+                break;
+
             case R.id.logoutbutton:
                 AlertDialog.Builder builder = new AlertDialog.Builder(AboutActivity.this);
                 builder.setTitle("Confirm");
@@ -113,7 +119,7 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(i);
                 break;
             case R.id.rulesButton:
-                i = new Intent(AboutActivity.this,TermsandPolicyActivity.class);
+                i = new Intent(AboutActivity.this, TermsandPolicyActivity.class);
                 startActivity(i);
                 break;
             case R.id.ratebutton:
@@ -123,7 +129,7 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(i);
                 break;
             case R.id.rulesButtontext:
-                i = new Intent(AboutActivity.this,TermsandPolicyActivity.class);
+                i = new Intent(AboutActivity.this, TermsandPolicyActivity.class);
                 startActivity(i);
                 break;
             case R.id.ratebuttontext:
@@ -166,6 +172,11 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
 
                 dialog2.show();
                 break;
+            case R.id.howtoplayButtontext:
+                i = new Intent(AboutActivity.this, TourActivity.class);
+                startActivity(i);
+                break;
+
 
         }
 

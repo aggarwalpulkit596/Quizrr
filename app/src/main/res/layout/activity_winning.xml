@@ -97,6 +97,7 @@
             android:id="@+id/otpbackbtnimageview"
             android:layout_width="30dp"
             android:layout_height="30dp"
+            android:visibility="invisible"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="28dp"

@@ -70,6 +70,7 @@ public class Winners extends AppCompatActivity {
     Quiz quiz;
     MediaPlayer winner;
     AssetFileDescriptor afd1;
+    int position;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -108,7 +109,7 @@ public class Winners extends AppCompatActivity {
 
     private void fetchleaderboard(String id) {
         ApiInterface apiService = ApiClients.getClient().create(ApiInterface.class);
-        Call<Leaderboard> call = apiService.leaderboard(QuizApp.getPreferenceManager().getString(MyPreferenceManager.KEY_ACCESS_TOKEN),id);
+        Call<Leaderboard> call = apiService.leaderboard(QuizApp.getPreferenceManager().getString(MyPreferenceManager.KEY_ACCESS_TOKEN), id);
         call.enqueue(new Callback<Leaderboard>() {
             @Override
             public void onResponse(Call<Leaderboard> call, Response<Leaderboard> response) {
@@ -134,6 +135,7 @@ public class Winners extends AppCompatActivity {
                                     winnermessage.setText("Well Done");
                                     winnnermoney.setVisibility(View.INVISIBLE);
                                     winnerpostion.setVisibility(View.GONE);
+                                    position = i +1;
                                     winnerusername.setText(leaderboards.getWinners().get(i).getUserName());
                                     Picasso.get().load(QuizApp.getPreferenceManager().getString(MyPreferenceManager.USERIMAGE)).into(winnerimage);
                                 }
@@ -156,12 +158,15 @@ public class Winners extends AppCompatActivity {
     private void setdata(int pos) {
         winner.start();
         if (pos == 0) {
+            position = pos + 1;
             winnerpostion.setImageResource(R.drawable.winner_first_circle);
             winnnermoney.setText("₹" + quiz.getPrize().get(0).getPrize());
         } else if (pos == 1) {
+            position = pos + 1;
             winnerpostion.setImageResource(R.drawable.winner_second_circle);
             winnnermoney.setText("₹" + quiz.getPrize().get(1).getPrize());
         } else if (pos == 2) {
+            position = pos + 1;
             winnerpostion.setImageResource(R.drawable.winner_third_circle);
             winnnermoney.setText("₹" + quiz.getPrize().get(2).getPrize());
         }
@@ -228,9 +233,14 @@ public class Winners extends AppCompatActivity {
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_SEND);
         intent.setType("image/*");
-
-        intent.putExtra(android.content.Intent.EXTRA_SUBJECT, "");
-        intent.putExtra(android.content.Intent.EXTRA_TEXT, "");
+        if (position <= 3)
+            intent.putExtra(Intent.EXTRA_TEXT, "Hey, I am playing live quizzes on Quizrr and winning cash prizes.\n" +
+                    "\n" +
+                    "Download Quizrr from http://bit.ly/playquizrr. To earn a free lifeline, join using my referral code \"" + QuizApp.getPreferenceManager().getString(MyPreferenceManager.USERNAME)+"\"");
+        else
+            intent.putExtra(Intent.EXTRA_TEXT, "Look, I just answered all the questions correctly on Quizrr.\n" +
+                    "\n" +
+                    "Play live quizzes and win cash prizes.Download Quizrr from http://bit.ly/playquizrr. To earn a free lifeline, join using my referral code \"" + QuizApp.getPreferenceManager().getString(MyPreferenceManager.USERNAME)+"\"");
         intent.putExtra(Intent.EXTRA_STREAM, uri);
         try {
             startActivity(Intent.createChooser(intent, "Share Screenshot"));

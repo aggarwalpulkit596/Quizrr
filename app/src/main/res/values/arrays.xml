@@ -24,4 +24,13 @@
         <item>@drawable/c_correct</item>
         <item>@drawable/d_correct</item>
     </integer-array>
+    <integer-array name="tourslide">
+        <item>@drawable/slide_1</item>
+        <item>@drawable/slide_2</item>
+        <item>@drawable/slide_3</item>
+        <item>@drawable/slide_4</item>
+        <item>@drawable/slide_5</item>
+        <item>@drawable/slide_6</item>
+
+    </integer-array>
 </resources>

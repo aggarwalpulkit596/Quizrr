@@ -466,7 +466,7 @@ public class Game2Activity extends AppCompatActivity implements View.OnClickList
 
                     public void run() {
                         gameover.start();
-                        TransitionManager.beginDelayedTransition(transitionsContainer, set);
+//                        TransitionManager.beginDelayedTransition(transitionsContainer, set);
                         responselayout.setVisibility(View.GONE);
 
                         Uri uri = Uri.parse("http://res.cloudinary.com/mathongo/image/upload/v1521801701/anxious.mp4");
@@ -609,6 +609,9 @@ public class Game2Activity extends AppCompatActivity implements View.OnClickList
         gameresponsetitle.setText("Oops! You missed it.");
         heartimage.setVisibility(View.VISIBLE);
         heartimage.setAlpha(0.4f);
+        if(isLifeLineUsed){
+            gameresponsemessage.setText("Lifeline already used.");
+        }else
         gameresponsemessage.setText("No lifeline to save you.");
         gameyouranswertime.setText(timespent.toString() + "s");
         responseimageview.setImageResource(R.drawable.x_icon);
@@ -625,7 +628,6 @@ public class Game2Activity extends AppCompatActivity implements View.OnClickList
     }
 
     private void inactive2(final Response status) {
-        nolife.start();
         if (isEliminated && firsttime) {
             gameresponsetitle.setText("Viewer Mode is on.");
             responseimageview.setImageResource(R.drawable.eye_icon);
@@ -634,6 +636,7 @@ public class Game2Activity extends AppCompatActivity implements View.OnClickList
             responseimageview.setBackground(getResources().getDrawable(R.drawable.response_eliminated));
         } else if (islate && firsttime) {
             gameresponsetitle.setText("Viewer Mode is on.");
+            nolife.start();
             responseimageview.setImageResource(R.drawable.eye_icon);
             gameresponsemessage.setText("You joined the game late.");
             giftext.setText("You joined late./nBe on time");
@@ -657,15 +660,7 @@ public class Game2Activity extends AppCompatActivity implements View.OnClickList
     }
 
     private void setattemptedprogress(final Response status, int optionselected) {
-        //loadmp4 or gif
-//        gifImageView.setVideoURI(Uri.parse(status.getGifUrl()));
-//        gifImageView.start();
-//        gifImageView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-//            @Override
-//            public void onPrepared(MediaPlayer mp) {
-//                mp.setLooping(true);
-//            }
-//        });
+
         Uri uri = Uri.parse(status.getGifUrl());
         MediaSource mediaSource = buildMediaSource(uri);
         LoopingMediaSource loopingSource = new LoopingMediaSource(mediaSource);
@@ -860,7 +855,9 @@ public class Game2Activity extends AppCompatActivity implements View.OnClickList
             public void onClick(View v) {
                 Intent shareintent = new Intent(Intent.ACTION_SEND);
                 shareintent.setType("text/plain");
-                shareintent.putExtra(Intent.EXTRA_TEXT, "The text you wanted to share");
+                shareintent.putExtra(Intent.EXTRA_TEXT, "Hey, I am playing live quizzes on Quizrr and winning cash prizes.\n" +
+                        "\n" +
+                        "Download Quizrr from http://bit.ly/playquizrr. To earn a free lifeline, join using my referral code \"" + QuizApp.getPreferenceManager().getString(MyPreferenceManager.USERNAME)+"\"");
                 try {
                     startActivity(shareintent);
                 } catch (android.content.ActivityNotFoundException ex) {
@@ -978,11 +975,10 @@ public class Game2Activity extends AppCompatActivity implements View.OnClickList
 
     private void showSnack(boolean isConnected) {
         String message;
-        int color;
         if (isConnected) {
             if (!connected) {
                 message = "Good! Connected to Internet";
-                color = Color.WHITE;
+
                 mSocket.disconnect();
                 mSocket.connect();
                 isEliminated = true;
@@ -995,7 +991,6 @@ public class Game2Activity extends AppCompatActivity implements View.OnClickList
         } else {
             connected = false;
             message = "Sorry! Not connected to internet";
-            color = Color.RED;
 
             Snackbar snackBar = Snackbar.make(transitionsContainer
                     , message, Snackbar.LENGTH_SHORT);

@@ -30,14 +30,16 @@ public class AboutActivity_ViewBinding implements Unbinder {
     target.texts = Utils.arrayOf(
         Utils.findRequiredViewAsType(source, R.id.logoutbuttontext, "field 'texts'", TextView.class), 
         Utils.findRequiredViewAsType(source, R.id.ratebuttontext, "field 'texts'", TextView.class), 
-        Utils.findRequiredViewAsType(source, R.id.rulesButtontext, "field 'texts'", TextView.class));
+        Utils.findRequiredViewAsType(source, R.id.rulesButtontext, "field 'texts'", TextView.class), 
+        Utils.findRequiredViewAsType(source, R.id.howtoplayButtontext, "field 'texts'", TextView.class));
     target.buttons = Utils.arrayOf(
         Utils.findRequiredViewAsType(source, R.id.instabutton, "field 'buttons'", ImageButton.class), 
         Utils.findRequiredViewAsType(source, R.id.fbbutton, "field 'buttons'", ImageButton.class), 
         Utils.findRequiredViewAsType(source, R.id.twitterbutton, "field 'buttons'", ImageButton.class), 
         Utils.findRequiredViewAsType(source, R.id.rulesButton, "field 'buttons'", ImageButton.class), 
         Utils.findRequiredViewAsType(source, R.id.logoutbutton, "field 'buttons'", ImageButton.class), 
-        Utils.findRequiredViewAsType(source, R.id.ratebutton, "field 'buttons'", ImageButton.class));
+        Utils.findRequiredViewAsType(source, R.id.ratebutton, "field 'buttons'", ImageButton.class), 
+        Utils.findRequiredViewAsType(source, R.id.howtoplayButton, "field 'buttons'", ImageButton.class));
   }
 
   @Override

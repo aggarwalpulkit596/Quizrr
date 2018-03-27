@@ -27,7 +27,7 @@
         android:layout_marginTop="15dp"
         android:fontFamily="@font/circular_book"
         android:lineSpacingExtra="1.2dp"
-        android:text="You can only view the game as you joined late. Be here before 9:00 PM."
+        android:text="You can only view the game as you joined late."
         android:textAlignment="center"
         android:textColor="#BF0F0520"
         android:textSize="18sp" />
@@ -40,7 +40,7 @@
         android:layout_marginTop="15dp"
         android:fontFamily="@font/circular_book"
         android:lineSpacingExtra="1.2dp"
-        android:text="You can set a reminder for tomorrow’s game."
+        android:text="You can set a reminder for next game."
         android:textAlignment="center"
         android:textColor="#BF0F0520"
         android:textSize="18sp" />

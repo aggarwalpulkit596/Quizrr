@@ -47,7 +47,7 @@ public class SigUpComplete extends AppCompatActivity {
         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         final ViewGroup transitionsContainer = findViewById(R.id.transitions_container);
         final Intent intent = getIntent();
-        username.setText("All set " + intent.getStringExtra("username"));
+        username.setText("All set " + intent.getStringExtra("username")+"!");
         Picasso.get().load(QuizApp.getPreferenceManager().getString(MyPreferenceManager.USERIMAGE)).into(userimage);
 
 

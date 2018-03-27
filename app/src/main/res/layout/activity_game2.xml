@@ -893,7 +893,6 @@
             android:layout_alignParentEnd="true"
             android:layout_alignTop="@+id/latenoofplayerstextview"
             android:layout_marginEnd="23dp"
-            android:text="25 sec"
             android:textColor="@android:color/white"
             android:textSize="16sp" />
 
@@ -916,7 +915,6 @@
             android:layout_marginStart="11dp"
             android:layout_toEndOf="@+id/latenoofplayerimageview"
             android:fontFamily="@font/circular_medium"
-            android:text="700"
             android:textColor="@android:color/white"
             android:textSize="16sp" />
 
@@ -939,6 +937,21 @@
             android:text="You're late."
             android:textColor="#fff"
             android:textSize="24sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:textAlignment="center"
+            android:lineSpacingMultiplier="1.2"
+            android:fontFamily="@font/circular_book"
+            android:text="Sorry, you joined the game late. Now you can only view the game. Be on time to play the quiz."
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
 
     </RelativeLayout>
 </LinearLayout>

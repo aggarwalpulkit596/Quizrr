@@ -63,7 +63,10 @@ public class WinningActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         if (doubleBackToExitPressedOnce) {
-            finishAffinity();
+            Intent i = new Intent(WinningActivity.this, HomeActivity.class);
+            i.putExtra("token", QuizApp.getPreferenceManager().getString(MyPreferenceManager.KEY_ACCESS_TOKEN));
+            startActivity(i);
+            finish();
             return;
         }
         this.doubleBackToExitPressedOnce = true;

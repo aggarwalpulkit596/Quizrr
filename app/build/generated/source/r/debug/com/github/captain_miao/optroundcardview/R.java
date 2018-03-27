@@ -40,12 +40,12 @@ public final class R {
         public static final int opt_round_card_view_default_radius = 0x7f07009b;
     }
     public static final class string {
-        public static final int opt_round_card_view_name = 0x7f0e0036;
+        public static final int opt_round_card_view_name = 0x7f0f0036;
     }
     public static final class style {
-        public static final int OptRoundCardView = 0x7f0f00b2;
-        public static final int OptRoundCardView_Dark = 0x7f0f00b3;
-        public static final int OptRoundCardView_Light = 0x7f0f00b4;
+        public static final int OptRoundCardView = 0x7f1000b2;
+        public static final int OptRoundCardView_Dark = 0x7f1000b3;
+        public static final int OptRoundCardView_Light = 0x7f1000b4;
     }
     public static final class styleable {
         public static final int[] OptRoundCardView = { 0x7f040140, 0x7f040141, 0x7f040142, 0x7f040143, 0x7f040144, 0x7f040145, 0x7f040146, 0x7f040147, 0x7f040148, 0x7f040149, 0x7f04014a, 0x7f04014b, 0x7f04014c, 0x7f04014d, 0x7f04014e, 0x7f04014f, 0x7f040150, 0x7f040151, 0x7f040152 };

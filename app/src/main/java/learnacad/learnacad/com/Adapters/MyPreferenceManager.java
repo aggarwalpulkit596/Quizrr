@@ -24,6 +24,8 @@ public class MyPreferenceManager {
     public static final String QUIZMIN = "quizmin";
     public static final String USERID = "userid";
     public static final String TIMESET = "timeset";
+    public static final String FIRSTTIME = "timeset";
+
 
 
 

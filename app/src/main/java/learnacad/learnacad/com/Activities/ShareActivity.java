@@ -29,7 +29,9 @@ public class ShareActivity extends AppCompatActivity {
         Intent whatsappIntent = new Intent(Intent.ACTION_SEND);
         whatsappIntent.setType("text/plain");
         whatsappIntent.setPackage("com.whatsapp");
-        whatsappIntent.putExtra(Intent.EXTRA_TEXT, "The text you wanted to share " +"http://bit.ly/playquizrr");
+        whatsappIntent.putExtra(Intent.EXTRA_TEXT, "Hey, I am playing live quizzes on Quizrr and winning cash prizes.\n" +
+                "\n" +
+                "Download Quizrr from http://bit.ly/playquizrr. To earn a free lifeline, join using my referral code \"" + QuizApp.getPreferenceManager().getString(MyPreferenceManager.USERNAME)+"\"");
         try {
             startActivity(Intent.createChooser(whatsappIntent, "Share Code"));
         } catch (ActivityNotFoundException e) {
@@ -40,7 +42,9 @@ public class ShareActivity extends AppCompatActivity {
     public void share(View view) {
         Intent whatsappIntent = new Intent(Intent.ACTION_SEND);
         whatsappIntent.setType("text/plain");
-        whatsappIntent.putExtra(Intent.EXTRA_TEXT, "The text you wanted to share "+"http://bit.ly/playquizrr");
+        whatsappIntent.putExtra(Intent.EXTRA_TEXT, "Hey, I am playing live quizzes on Quizrr and winning cash prizes.\n" +
+                "\n" +
+                "Download Quizrr from http://bit.ly/playquizrr. To earn a free lifeline, join using my referral code \"" + QuizApp.getPreferenceManager().getString(MyPreferenceManager.USERNAME)+"\"");
         try {
             startActivity(whatsappIntent);
         } catch (android.content.ActivityNotFoundException ex) {
@@ -52,4 +56,5 @@ public class ShareActivity extends AppCompatActivity {
         onBackPressed();
         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
     }
+
 }

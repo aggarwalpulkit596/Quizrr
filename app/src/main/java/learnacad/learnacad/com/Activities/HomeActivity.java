@@ -3,7 +3,6 @@ package learnacad.learnacad.com.Activities;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Handler;
@@ -21,7 +20,6 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.github.nkzawa.emitter.Emitter;
 import com.github.nkzawa.socketio.client.Socket;
 import com.google.gson.JsonObject;
@@ -30,10 +28,8 @@ import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 import com.theartofdev.edmodo.cropper.CropImage;
 import com.theartofdev.edmodo.cropper.CropImageView;
-
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.File;
 import java.io.IOException;
 import java.text.DateFormat;
@@ -41,8 +37,6 @@ import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.TimeZone;
-import java.util.Timer;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -50,7 +44,6 @@ import id.zelory.compressor.Compressor;
 import learnacad.learnacad.com.Adapters.AlarmReceiver;
 import learnacad.learnacad.com.Adapters.ConnectivityReceiver;
 import learnacad.learnacad.com.Adapters.MyPreferenceManager;
-import learnacad.learnacad.com.Adapters.MyTimeTask;
 import learnacad.learnacad.com.Adapters.NotificationScheduler;
 import learnacad.learnacad.com.Game2Activity;
 import learnacad.learnacad.com.InfoActivies.AboutActivity;
@@ -103,9 +96,7 @@ public class HomeActivity extends AppCompatActivity implements ConnectivityRecei
     Socket mSocket;
     AlertDialog deleteDialog;
     Quiz quiz;
-    private boolean islive;
     ConnectivityReceiver connectivityReceiver;
-    Timer timer;
 
 
     @Override
@@ -115,8 +106,6 @@ public class HomeActivity extends AppCompatActivity implements ConnectivityRecei
         ButterKnife.bind(this);
         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         token = QuizApp.getPreferenceManager().getString(MyPreferenceManager.KEY_ACCESS_TOKEN);
-
-        Log.i("TAG", "onCreate: " + token);
         if (token == null) {
             startActivity(new Intent(HomeActivity.this, SplashActivity.class));
             finish();
@@ -134,8 +123,6 @@ public class HomeActivity extends AppCompatActivity implements ConnectivityRecei
         progressBar.setElevation(10);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE,
                 WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE);//To show ProgressBar
-
-
         fetchdata();
         fetchquizdata();
         extras();
@@ -215,25 +202,21 @@ public class HomeActivity extends AppCompatActivity implements ConnectivityRecei
                         timetextview.setTextSize(18);
                         Picasso.get().load(quiz.getPrizUrl()).networkPolicy(NetworkPolicy.NO_CACHE).into(prizeamounttextview);
                         QuizApp.getPreferenceManager().putString(MyPreferenceManager.QUIZID, quiz.getId());
-                        Log.i("TAG", "checkrea:quiz is live " + quiz.getIsLive());
                         if (quiz.getIsLive()) {
                             mSocket = application.getSocket(token);
-                            Log.i("TAG", "checkrea:quiz is live inside" + quiz.getIsLive());
-                            Log.i("TAG", "checkrea: "+ quiz.getDate()*1000 +"   " + "  " + (System.currentTimeMillis()) +"  "+   540000);
                             timesocket();
                             playersocket();
                         }
-                        Log.i("TAG", "checkrea: "+(quiz.getDate()*1000 - (System.currentTimeMillis()) - 540000));
+
                         if (!QuizApp.getPreferenceManager().getString(MyPreferenceManager.TIMESET).equals("true")) {
                             QuizApp.getPreferenceManager().putString(MyPreferenceManager.TIMESET, "true");
                             final Handler handler = new Handler();
                             handler.postDelayed(new Runnable() {
                                 @Override
                                 public void run() {
-                                    Log.i("TAG", "checkreaconditiontrue");
                                     fetchquizdata();
                                 }
-                            }, (quiz.getDate()*1000 - (System.currentTimeMillis())) - 540000);
+                            }, (quiz.getDate() * 1000 - (System.currentTimeMillis())) - 540000);
                         }
 
                     } else {
@@ -263,7 +246,10 @@ public class HomeActivity extends AppCompatActivity implements ConnectivityRecei
                         int timeNextQuestionIn;
                         try {
                             timeNextQuestionIn = response.getInt("timeleft");
-                            Log.i("TAG", "run: time" + response.get("timeleft"));
+                            int min = timeNextQuestionIn / 60;
+                            int sec = timeNextQuestionIn % 60;
+                            timetextview.setText("Starts in  " + String.format("%02d", min) + ":" + String.format("%02d", sec));
+
                             if (timeNextQuestionIn <= 180) {
                                 Intent i = new Intent(HomeActivity.this, InstructionActivity.class);
                                 i.putExtra("quiz", quiz);
@@ -272,15 +258,16 @@ public class HomeActivity extends AppCompatActivity implements ConnectivityRecei
                                     Intent game = new Intent(HomeActivity.this, Game2Activity.class);
                                     game.putExtra("_id", id);
                                     game.putExtra("quiz", quiz);
-                                    Log.i("TAG", "run: " + quiz.getIsLate());
                                     startActivity(game);
                                     finish();
                                     mSocket.off("time_left");
                                     mSocket.off("live_people");
+                                    mSocket.off("error");
                                 } else {
                                     startActivity(i);
                                     mSocket.off("time_left");
                                     mSocket.off("live_people");
+                                    mSocket.off("error");
                                 }
 
                             }
@@ -305,7 +292,6 @@ public class HomeActivity extends AppCompatActivity implements ConnectivityRecei
                     public void run() {
                         Log.d("checkrea", Arrays.toString(args));
 
-                        Toast.makeText(HomeActivity.this, "" + args[0].toString(), Toast.LENGTH_SHORT).show();
                     }
                 });
             }
@@ -326,7 +312,7 @@ public class HomeActivity extends AppCompatActivity implements ConnectivityRecei
                         try {
                             notificationimage.setImageResource(R.drawable.users);
                             int count = response.getInt("count");
-                            notificationtextview.setText(count + " Players ");
+                            notificationtextview.setText(count + " Players have joined");
 
                         } catch (JSONException e) {
 
@@ -339,20 +325,17 @@ public class HomeActivity extends AppCompatActivity implements ConnectivityRecei
 
     public void setCalender(View view) {
         if (quiz != null) {
-            view.setClickable(false);
+            int hours = Integer.parseInt(QuizApp.getPreferenceManager().getString(MyPreferenceManager.QUIZHOUR));
             Intent intent = new Intent(Intent.ACTION_EDIT);
             intent.setType("vnd.android.cursor.item/event");
-            intent.putExtra(CalendarContract.Events.TITLE, "Game");
-            intent.putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, quiz.getDate() * 1000);
+            intent.putExtra(CalendarContract.Events.TITLE, quiz.getTopic() + " - Quizrr");
+            intent.putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, quiz.getDate() * 1000 - 600000);
             intent.putExtra(CalendarContract.EXTRA_EVENT_END_TIME,
                     quiz.getEndTime() * 1000);
             intent.putExtra(CalendarContract.Events.ALL_DAY, false);// periodicity
-            intent.putExtra(CalendarContract.Events.DESCRIPTION, "Event Will Start");
+            intent.putExtra(CalendarContract.Events.DESCRIPTION, "Play tonight's quiz at " + hours + " PM on Quizrr. Learn something new, win cash prizes and have fun.");
             startActivity(intent);
-            int hours = Integer.parseInt(QuizApp.getPreferenceManager().getString(MyPreferenceManager.QUIZHOUR));
-            int minutes = Integer.parseInt(QuizApp.getPreferenceManager().getString(MyPreferenceManager.QUIZMIN));
-            NotificationScheduler.setReminder(HomeActivity.this, AlarmReceiver.class, hours, minutes);
-            Toast.makeText(application, "Reminder Set !", Toast.LENGTH_SHORT).show();
+
         }
 
     }
@@ -396,7 +379,6 @@ public class HomeActivity extends AppCompatActivity implements ConnectivityRecei
         call.enqueue(new Callback<JsonObject>() {
             @Override
             public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
-                Log.i("TAG", "onResponse: " + response.message() + response);
                 Picasso.get().load(resultUri).into(circleImageView);
             }
 
@@ -469,29 +451,17 @@ public class HomeActivity extends AppCompatActivity implements ConnectivityRecei
         Calendar c2 = Calendar.getInstance();
         c2.setTimeInMillis(milliseconds);
         DateFormat sdf;
-        //Now create the time and schedule it
-//        timer = new Timer();
+
+
         Calendar calendar2 = Calendar.getInstance();
         calendar2.setTimeInMillis(milliseconds - 570000);
-        int hours = calendar2.get(Calendar.HOUR_OF_DAY);
+        int hours = calendar2.get(Calendar.HOUR);
         int minutes = calendar2.get(Calendar.MINUTE);
         QuizApp.getPreferenceManager().putString(MyPreferenceManager.QUIZHOUR, String.valueOf(hours));
         QuizApp.getPreferenceManager().putString(MyPreferenceManager.QUIZMIN, String.valueOf(minutes));
-//        //Use this if you want to execute it once
-//        timer.schedule(new MyTimeTask() {
-//            @Override
-//            public void run() {
-//                fetchquizdata();
-//            }
-//        }, calendar2.getTime());
-//        timer.cancel();
+        NotificationScheduler.setReminder(HomeActivity.this, AlarmReceiver.class, hours, minutes);
 
-        if ((milliseconds - (System.currentTimeMillis()) <= 600000) && (milliseconds - (System.currentTimeMillis()) > 0)) {
-            Log.i("TAG", "formatDate: " + (milliseconds - (System.currentTimeMillis())));
-            Long min = (milliseconds - (System.currentTimeMillis())) / 60000;
-            int sec = 0;
-            return "Starts in  " + String.format("%02d", min) + ":" + String.format("%02d", sec);
-        } else if (c1.get(Calendar.YEAR) == c2.get(Calendar.YEAR)
+        if (c1.get(Calendar.YEAR) == c2.get(Calendar.YEAR)
                 && c1.get(Calendar.DAY_OF_YEAR) == c2.get(Calendar.DAY_OF_YEAR)) {
             sdf = new SimpleDateFormat("hh:mm aaa");
             sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
@@ -528,13 +498,10 @@ public class HomeActivity extends AppCompatActivity implements ConnectivityRecei
     // Showing the status in Snackbar
     private void showSnack(boolean isConnected) {
         String message;
-        int color;
         if (isConnected) {
             message = "Good! Connected to Internet";
-            color = Color.WHITE;
         } else {
             message = "Sorry! Not connected to internet";
-            color = Color.RED;
             Snackbar snackBar = Snackbar.make(relativeLayout
                     , message, Snackbar.LENGTH_SHORT);
             snackBar.show();
@@ -547,6 +514,5 @@ public class HomeActivity extends AppCompatActivity implements ConnectivityRecei
     protected void onPause() {
         super.onPause();
         unregisterReceiver(connectivityReceiver);
-//        mSocket.off("time_left");
     }
 }

@@ -13,11 +13,11 @@
     <application
         android:name=".QuizApp"
         android:allowBackup="true"
-        android:icon="@drawable/app_icon_circle"
+        android:icon="@drawable/app_icon_rounded"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:screenOrientation="portrait"
         android:roundIcon="@drawable/app_icon_circle"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme1">
         <provider
@@ -80,12 +80,10 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".InfoActivies.Winners" >
-
-        </activity>
+        <activity android:name=".InfoActivies.Winners"></activity>
         <activity android:name=".InfoActivies.LosersActivity" />
-        <activity android:name=".Game2Activity"></activity>
-        <activity android:name=".Activities.PastQuizesActivity"></activity>
+        <activity android:name=".Game2Activity" />
+        <activity android:name=".Activities.PastQuizesActivity" />
 
         <receiver
             android:name=".Adapters.ConnectivityReceiver"
@@ -94,6 +92,8 @@
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
         </receiver>
+
+        <activity android:name=".Activities.TourActivity"></activity>
     </application>
 
 </manifest>

@@ -20,7 +20,7 @@
         android:name="learnacad.learnacad.com.QuizApp"
         android:allowBackup="true"
         android:debuggable="true"
-        android:icon="@drawable/app_icon_circle"
+        android:icon="@drawable/app_icon_rounded"
         android:label="@string/app_name"
         android:largeHeap="true"
         android:roundIcon="@drawable/app_icon_circle"
@@ -87,8 +87,7 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name="learnacad.learnacad.com.InfoActivies.Winners" >
-        </activity>
+        <activity android:name="learnacad.learnacad.com.InfoActivies.Winners" />
         <activity android:name="learnacad.learnacad.com.InfoActivies.LosersActivity" />
         <activity android:name="learnacad.learnacad.com.Game2Activity" />
         <activity android:name="learnacad.learnacad.com.Activities.PastQuizesActivity" />
@@ -100,6 +99,8 @@
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
         </receiver>
+
+        <activity android:name="learnacad.learnacad.com.Activities.TourActivity" />
 
         <provider
             android:name="com.squareup.picasso.PicassoProvider"

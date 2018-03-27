@@ -37,7 +37,7 @@
         android:layout_marginTop="15dp"
         android:lineSpacingMultiplier="1.2"
         android:fontFamily="@font/circular_book"
-        android:text="Ask your friends if they have got a  referral code for you."
+        android:text="Ask your friends if they have got a referral code."
         android:textAlignment="center"
         android:textColor="#bf0f0520"
         android:textSize="18sp" />

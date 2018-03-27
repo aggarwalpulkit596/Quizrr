@@ -12,6 +12,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.google.gson.JsonObject;
@@ -41,9 +42,9 @@ public class ViewPagerAdapter extends PagerAdapter {
     String quizid;
 
 
-    public ViewPagerAdapter(Context mContext, String quizid) {
+    public ViewPagerAdapter(Context mContext, int value) {
         this.mContext = mContext;
-        this.quizid = quizid;
+        this.value = value;
 
     }
 
@@ -65,7 +66,9 @@ public class ViewPagerAdapter extends PagerAdapter {
         int count;
         if (value == 1)
             count = list.size();
-        else
+        else if (value == 2) {
+            count = 6;
+        } else
             count = value;
         Log.i("TAG", "getCount: " + count);
 
@@ -87,6 +90,19 @@ public class ViewPagerAdapter extends PagerAdapter {
             TextView instruction = itemView.findViewById(R.id.instructiontext);
             instruction.setText(list.get(position).getText());
             heading.setText(list.get(position).getHeader());
+        } else if (value == 2) {
+            TypedArray img;
+            String[] title = {"Daily Quiz", "Questions", "Lifelines", "Internet Connection", "Elimination", "Winners"};
+            String[] message = {"Play live quiz every night with other students to improve learning &amp; earn cash prizes.", "Answer all the questions with the least total time to win the quiz. Time to next question is shown by the progress bar.", "One lifeline will save you from a wrong attempt unless it is the last question.", "A good internet connection is must else you won&apos;t be able to play the quiz.", "Wrong or no attempt, slow or loss of connection, late joining will cause elimination &amp; put you in viewer mode.", "Top 3 winners will earn cash rewards."};
+            img = mContext.getResources().obtainTypedArray(R.array.tourslide);
+            itemView = LayoutInflater.from(mContext).inflate(R.layout.tourlayout, container, false);
+            ImageView imageView = itemView.findViewById(R.id.imageView);
+            TextView titleview = itemView.findViewById(R.id.textView2);
+            TextView messageview = itemView.findViewById(R.id.textView3);
+            titleview.setText(title[position]);
+            messageview.setText(message[position]);
+            imageView.setImageResource(img.getResourceId(position, 0));
+
         } else {
             itemView = LayoutInflater.from(mContext).inflate(R.layout.quizlayout, container, false);
             fetchquizreview(position, quizid, itemView);
@@ -137,7 +153,10 @@ public class ViewPagerAdapter extends PagerAdapter {
                 option4.setDisplayText(rv.getOptions().get(3).getValue());
                 option4.setTextSize(15);
                 questionnumber.setText((position + 1) + "");
-                leasttime.setText(rv.getLeastTime() + " sec");
+                if (rv.getLeastTime() == null)
+                    leasttime.setText("-");
+                else
+                    leasttime.setText(rv.getLeastTime() + " sec");
                 int ans = rv.getCorrectAnswer();
                 if (ans == 1) {
                     optionA.setImageResource(img.getResourceId(ans - 1, 0));
@@ -204,7 +223,9 @@ public class ViewPagerAdapter extends PagerAdapter {
     public void destroyItem(ViewGroup container, int position, Object object) {
         if (value == 1) {
             container.removeView((FrameLayout) object);
-        } else
+        } else if (value == 2)
+            container.removeView((ScrollView) object);
+        else
             container.removeView((LinearLayout) object);
     }
 }

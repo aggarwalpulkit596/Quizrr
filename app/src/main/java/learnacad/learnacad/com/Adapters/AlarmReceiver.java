@@ -30,7 +30,7 @@ public class AlarmReceiver extends BroadcastReceiver {
 
         //Trigger the notification
         NotificationScheduler.showNotification(context, HomeActivity.class,
-                "Quiz is about to go live", "Want to Play ?");
+                "Settle down!", "Game is going to start in 10 min.");
 
     }
 }

@@ -86,7 +86,7 @@ public class ProfileActivity extends AppCompatActivity {
                 //your business logic
                 Intent whatsappIntent = new Intent(Intent.ACTION_SEND);
                 whatsappIntent.setType("text/plain");
-                whatsappIntent.putExtra(Intent.EXTRA_TEXT, "Hey,Download Quizrr  " + "http://bit.ly/playquizrr");
+                whatsappIntent.putExtra(Intent.EXTRA_TEXT, "Hey, I am signing up for Quizrr. Can you please share your referral code, so that you and I both can earn a free lifeline?\n" + "\n" + "Download Quizrr from here: http://bit.ly/playquizrr");
                 try {
                     startActivity(Intent.createChooser(whatsappIntent, "Share Code"));
                 } catch (ActivityNotFoundException e) {
@@ -196,7 +196,7 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<User> call, Response<User> response) {
 
-                Log.i("TAG", "onResponse:signup111 " + response.message() + response.body() + response);
+                Log.i("TAG", "onResponse:signup111 " + response.message());
                 if (response.isSuccessful()) {
                     User object = response.body();
                     Intent i = new Intent(ProfileActivity.this, SigUpComplete.class);
@@ -216,9 +216,13 @@ public class ProfileActivity extends AppCompatActivity {
                     startActivity(i);
                     progressDialog.dismiss();
                     finish();
-                } else {
+                } else if(response.message().equals("Conflict")){
                     progressDialog.dismiss();
-                    Snackbar snackBar = Snackbar.make(constraintLayout, "Oops! Invalid Username or Referral Code try again.", Snackbar.LENGTH_SHORT);
+                    Snackbar snackBar = Snackbar.make(constraintLayout, "Oops! Invalid Username.", Snackbar.LENGTH_SHORT);
+                    snackBar.show();
+                }else if(response.message().equals("Not Found")){
+                    progressDialog.dismiss();
+                    Snackbar snackBar = Snackbar.make(constraintLayout, "Oops! Invalid Referral Code.", Snackbar.LENGTH_SHORT);
                     snackBar.show();
                 }
             }

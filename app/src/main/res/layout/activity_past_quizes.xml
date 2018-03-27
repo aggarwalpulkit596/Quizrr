@@ -122,12 +122,14 @@
             tools:listitem="@layout/pastquizlayout" />
         <TextView
             android:id="@+id/empty"
-            android:text="No Past Quiz"
+            android:layout_marginTop="40dp"
+            android:text="No Past Quizzes"
             android:textColor="#fff"
             android:visibility="gone"
+            android:alpha="0.5"
+            android:textSize="18sp"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            style="@android:style/TextAppearance.Large"
             android:gravity="center">
         </TextView>
 

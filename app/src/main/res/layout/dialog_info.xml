@@ -11,8 +11,8 @@
 
 
     <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
         android:src="@drawable/x_circle"
         android:background="#00000000"
         android:id="@+id/btn_yes"
@@ -43,7 +43,7 @@
         android:lineSpacingExtra="1.2dp"
         android:layout_below="@id/text"
         android:layout_marginBottom="40dp"
-        android:text="The amount you earn will ve transferred at 12:00 AM to your Paytm account linked with the mobile number you have used during registering."
+        android:text="The cash prize you earn in a game will be transferred at 12:00 AM on the same day, directly to the Paytm account linked to your registered mobile number."
         android:textAlignment="center"
         android:textSize="18sp" />
 
