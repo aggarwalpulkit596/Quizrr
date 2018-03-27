@@ -20,6 +20,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import de.hdodenhof.circleimageview.CircleImageView;
 import quizrr.quizrr.quizrr.Activities.HomeActivity;
+import quizrr.quizrr.quizrr.Activities.TourActivity;
 import quizrr.quizrr.quizrr.Adapters.MyPreferenceManager;
 import quizrr.quizrr.quizrr.QuizApp;
 import quizrr.quizrr.com.R;
@@ -77,7 +78,7 @@ public class SigUpComplete extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent i = new Intent(SigUpComplete.this, HomeActivity.class);
+                Intent i = new Intent(SigUpComplete.this, TourActivity.class);
                 i.putExtra("token", intent.getStringExtra("token"));
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |
                         Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);

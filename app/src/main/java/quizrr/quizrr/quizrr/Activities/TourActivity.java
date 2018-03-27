@@ -1,5 +1,6 @@
 package quizrr.quizrr.quizrr.Activities;
 
+import android.content.Intent;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,6 +14,7 @@ import butterknife.ButterKnife;
 import quizrr.quizrr.quizrr.Adapters.ViewPagerAdapter;
 import quizrr.quizrr.quizrr.Adapters.ViewPagerCustomDuration;
 import quizrr.quizrr.com.R;
+import quizrr.quizrr.quizrr.SignUpActivites.SigUpComplete;
 
 public class TourActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener {
     @BindView(R.id.viewpager)
@@ -25,6 +27,7 @@ public class TourActivity extends AppCompatActivity implements ViewPager.OnPageC
     ViewPagerAdapter mAdapter;
     int dotsCount;
     ImageView[] dots;
+    Intent intent;
 
 
     @Override
@@ -32,6 +35,7 @@ public class TourActivity extends AppCompatActivity implements ViewPager.OnPageC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tour);
         ButterKnife.bind(this);
+        intent = getIntent();
         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         mAdapter = new ViewPagerAdapter(TourActivity.this, 2);
         viewPager.setAdapter(mAdapter);
@@ -93,11 +97,14 @@ public class TourActivity extends AppCompatActivity implements ViewPager.OnPageC
     }
 
     public void nextbtn(View view) {
-
-//        Intent i = new Intent(TourActivity.this, SignUpActivity.class);
-//        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |
-//                Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
-//        startActivity(i);
+        if (intent.getStringExtra("token") != null) {
+            Intent i = new Intent(TourActivity.this, HomeActivity.class);
+            i.putExtra("token", intent.getStringExtra("token"));
+            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |
+                    Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+            startActivity(i);
+            finish();
+        }
         finish();
     }
 
